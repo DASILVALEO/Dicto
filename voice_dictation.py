@@ -57,7 +57,7 @@ DEFAULT_CONFIG = {
     "quit_hotkey": "ctrl+alt+q",
     "sample_rate": 16000,              # Whisper/ASR espera 16 kHz
     "channels": 1,
-    "min_duration_seconds": 0.3,
+    "min_duration_seconds": 0.1,
     "input_device": None,              # None = default del sistema
     "auto_paste": True,                # Si False, solo copia al portapapeles
     "show_notifications": False,
