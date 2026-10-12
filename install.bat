@@ -48,23 +48,41 @@ if defined MINIMAX_KEY (
 echo.
 
 REM 4) Crear acceso directo en escritorio
-set SHORTCUT=%USERPROFILE%\Desktop\Dictado por Voz (MiniMax).lnk
-echo Creando acceso directo en escritorio...
+echo Creando accesos directos en escritorio...
+
+REM Acceso 1: Dictado directo
+set SHORTCUT1=%USERPROFILE%\\Desktop\\Dictado por Voz (MiniMax).lnk
 (
     echo Set WshShell = CreateObject("WScript.Shell"^)
-    echo Set fso = CreateObject("Scripting.FileSystemObject"^)
     echo sPath = Replace(WScript.ScriptFullName, WScript.ScriptName, ""^)
     echo WshShell.CurrentDirectory = sPath
-    echo Set shortcut = WshShell.CreateShortcut("%SHORTCUT%"^)
+    echo Set shortcut = WshShell.CreateShortcut("%SHORTCUT1%"^)
     echo shortcut.TargetPath = "%DIR%start_dictation_silent.vbs"
     echo shortcut.WorkingDirectory = "%DIR%"
     echo shortcut.IconLocation = "shell32.dll,238"
     echo shortcut.Description = "Dictado por voz (MiniMax nube + Vosk offline). Hotkey: Alt Gr"
     echo shortcut.Save
-) > "%TEMP%\create_shortcut.vbs"
-cscript //NoLogo "%TEMP%\create_shortcut.vbs"
-del "%TEMP%\create_shortcut.vbs"
-echo Acceso directo creado.
+) > "%TEMP%\\create_shortcut1.vbs"
+cscript //NoLogo "%TEMP%\\create_shortcut1.vbs"
+del "%TEMP%\\create_shortcut1.vbs"
+
+REM Acceso 2: Configurador GUI
+set SHORTCUT2=%USERPROFILE%\\Desktop\\Configurador voz-a-texto.lnk
+(
+    echo Set WshShell = CreateObject("WScript.Shell"^)
+    echo sPath = Replace(WScript.ScriptFullName, WScript.ScriptName, ""^)
+    echo WshShell.CurrentDirectory = sPath
+    echo Set shortcut = WshShell.CreateShortcut("%SHORTCUT2%"^)
+    echo shortcut.TargetPath = "%DIR%configurador_silent.vbs"
+    echo shortcut.WorkingDirectory = "%DIR%"
+    echo shortcut.IconLocation = "shell32.dll,21"
+    echo shortcut.Description = "Configurador voz-a-texto: API keys, hotkey, idioma, etc."
+    echo shortcut.Save
+) > "%TEMP%\\create_shortcut2.vbs"
+cscript //NoLogo "%TEMP%\\create_shortcut2.vbs"
+del "%TEMP%\\create_shortcut2.vbs"
+
+echo Accesos directos creados.
 echo.
 
 REM 5) Preguntar auto-inicio

@@ -24,6 +24,22 @@ Aplicación de dictado por voz para Windows que escribe donde esté el cursor.
 3. Pegar tu API key de MiniMax cuando lo pida
 4. Listo — doble-click en el acceso directo "Dictado por Voz (MiniMax)" del escritorio
 
+## Configuración interactiva (GUI)
+
+Hay un **panel de configuración** con interfaz gráfica:
+
+- Doble-click en el acceso directo "Configurador voz-a-texto" del escritorio
+- O ejecutar: `pythonw configurador.pyw`
+
+Permite:
+- Ver y cambiar la API key de cualquier proveedor (MiniMax, Groq, OpenAI)
+- Probar la conexión con un botón
+- Cambiar la hotkey de dictado
+- Cambiar el idioma
+- Activar/desactivar auto-paste
+- Ver el estado actual (proceso, auto-inicio, etc.)
+- Reiniciar el watchdog sin reiniciar Windows
+
 ## Uso
 
 1. **Abre cualquier app** (Word, navegador, VS Code, Excel, Bloc de notas)
@@ -31,6 +47,10 @@ Aplicación de dictado por voz para Windows que escribe donde esté el cursor.
 3. **Pulsa `Alt Gr`** (Alt derecha) una vez — aparece la barrita verde/roja
 4. **Habla en español** — verás las barras moverse según tu volumen
 5. **Pulsa `Alt Gr`** otra vez — el texto se pega donde está el cursor
+
+## Cambiar la API key
+
+Si rotás tu API key o querés cambiar de proveedor, abrí el **Configurador** (acceso directo del escritorio). La nueva key se guarda al instante. El watchdog se reinicia automáticamente para tomar los cambios.
 
 ## Configuración
 
@@ -55,8 +75,11 @@ Edita `~/.dictation_config.json` (en tu carpeta de usuario):
 - `voice_dictation.py` — script principal (cloud: MiniMax, Groq, OpenAI)
 - `dictation_vosk.py` — alternativo offline (Vosk)
 - `overlay.py` — barra visual flotante
+- `configurador.py` / `configurador.pyw` — panel GUI de configuración
+- `configurador_silent.vbs` — launcher sin consola del configurador
 - `watchdog_dictation.bat` — reinicia la app si muere
 - `start_dictation_silent.vbs` — launcher sin consola
+- `install.bat` — instalador para PC nueva
 - `requirements.txt` — dependencias Python
 
 ## Crear API key de MiniMax
