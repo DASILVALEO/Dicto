@@ -1,12 +1,12 @@
-# Contributing to Dicto
+﻿# Contributing to Dicto
 
-¡Gracias por tu interés en mejorar Dicto! Este documento te guía para empezar.
+Â¡Gracias por tu interÃ©s en mejorar Dicto! Este documento te guÃ­a para empezar.
 
-## 🚀 Setup para desarrollo
+## ðŸš€ Setup para desarrollo
 
 ```bash
 # 1. Fork y clona el repo
-git clone https://github.com/TU_USUARIO/Dicto.git
+git clone https://github.com/tu_usuario/Dicto.git
 cd Dicto
 
 # 2. Crea un virtualenv (recomendado)
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 watchdog_dictation.bat
 ```
 
-## 🧪 Test rápido
+## ðŸ§ª Test rÃ¡pido
 
 Antes de hacer commit:
 
@@ -33,79 +33,81 @@ pythonw configurador.pyw
 python make_demo_gif.py
 ```
 
-## 📁 Estructura del proyecto
+## ðŸ“ Estructura del proyecto
 
 ```
 Dicto/
-├── voice_dictation.py        # Script principal (cloud STT)
-├── dictation_vosk.py         # Alternativa offline
-├── overlay.py                # Widget visual Tkinter
-├── configurador.py           # Panel de configuración GUI
-├── watchdog_dictation.bat    # Auto-restart cada 3 min
-├── install.bat               # Instalador para PC nueva
-├── start_dictation_silent.vbs
-├── configurador_silent.vbs
-├── logo.svg, banner.svg      # Branding
-├── docs/                     # Screenshots y assets
-│   ├── demo.gif
-│   ├── configurador-screenshot.png
-│   ├── screenshot-1-grabando-word.png
-│   ├── screenshot-2-procesando.png
-│   ├── screenshot-3-resultado.png
-│   └── screenshot-4-multi-app.png
-└── README.md, README_ES.md
+â”œâ”€â”€ voice_dictation.py        # Script principal (cloud STT)
+â”œâ”€â”€ dictation_vosk.py         # Alternativa offline
+â”œâ”€â”€ overlay.py                # Widget visual Tkinter
+â”œâ”€â”€ configurador.py           # Panel de configuraciÃ³n GUI
+â”œâ”€â”€ watchdog_dictation.bat    # Auto-restart cada 3 min
+â”œâ”€â”€ install.bat               # Instalador para PC nueva
+â”œâ”€â”€ start_dictation_silent.vbs
+â”œâ”€â”€ configurador_silent.vbs
+â”œâ”€â”€ logo.svg, banner.svg      # Branding
+â”œâ”€â”€ docs/                     # Screenshots y assets
+â”‚   â”œâ”€â”€ demo.gif
+â”‚   â”œâ”€â”€ configurador-screenshot.png
+â”‚   â”œâ”€â”€ screenshot-1-grabando-word.png
+â”‚   â”œâ”€â”€ screenshot-2-procesando.png
+â”‚   â”œâ”€â”€ screenshot-3-resultado.png
+â”‚   â””â”€â”€ screenshot-4-multi-app.png
+â””â”€â”€ README.md, README_ES.md
 ```
 
-## 🎯 Áreas donde contribuir
+## ðŸŽ¯ Ãreas donde contribuir
 
-### 🟢 Fácil (PR de 1-2 horas)
-- **Más idiomas en Vosk**: descargar modelo nuevo, agregar a docs/
-- **Traducciones del README**: ya tenemos ES, agregar más (pt, fr, de...)
+### ðŸŸ¢ FÃ¡cil (PR de 1-2 horas)
+- **MÃ¡s idiomas en Vosk**: descargar modelo nuevo, agregar a docs/
+- **Traducciones del README**: ya tenemos ES, agregar mÃ¡s (pt, fr, de...)
 - **Bug fixes**: revisar issues abiertos
-- **Mejorar documentación**: typos, ejemplos, troubleshooting
+- **Mejorar documentaciÃ³n**: typos, ejemplos, troubleshooting
 
-### 🟡 Medio (PR de 1-2 días)
-- **System tray icon**: agregar icono en bandeja con menú (Show config / Quit)
-- **Cancelación de ruido**: integrar RNNoise via sounddevice
+### ðŸŸ¡ Medio (PR de 1-2 dÃ­as)
+- **System tray icon**: agregar icono en bandeja con menÃº (Show config / Quit)
+- **CancelaciÃ³n de ruido**: integrar RNNoise via sounddevice
 - **Historial de dictados**: guardar texto + audio + tiempo
-- **Atajos por aplicación**: distintos hotkeys según la app en foco
+- **Atajos por aplicaciÃ³n**: distintos hotkeys segÃºn la app en foco
 
-### 🔴 Avanzado (PR de 1+ semana)
+### ðŸ”´ Avanzado (PR de 1+ semana)
 - **Empaquetado .exe**: usar PyInstaller para crear un solo .exe sin Python
-- **Context auto-detection**: identificar si el cursor está en chat, editor, etc.
+- **Context auto-detection**: identificar si el cursor estÃ¡ en chat, editor, etc.
 - **Wake word**: "Hey Dicto" para iniciar dictado sin hotkey
 - **Streaming transcription**: ver el texto mientras hablas (como Otter.ai)
 
-## 📐 Convenciones de código
+## ðŸ“ Convenciones de cÃ³digo
 
 - **Python 3.10+** (uso de type hints)
-- **Líneas < 100 caracteres**
-- **Funciones pequeñas** con docstrings
-- **Sin dependencias innecesarias** (la app es liviana por diseño)
-- **Comentarios en español** para usuarios hispanohablantes, en inglés para código
+- **LÃ­neas < 100 caracteres**
+- **Funciones pequeÃ±as** con docstrings
+- **Sin dependencias innecesarias** (la app es liviana por diseÃ±o)
+- **Comentarios en espaÃ±ol** para usuarios hispanohablantes, en inglÃ©s para cÃ³digo
 
-## 🔄 Proceso de Pull Request
+## ðŸ”„ Proceso de Pull Request
 
 1. Crea una rama: `git checkout -b feature/mi-feature`
 2. Commit con mensaje descriptivo: `git commit -m "feat: agregu XYZ"`
 3. Push: `git push origin feature/mi-feature`
 4. Abre un PR en GitHub
-5. Espera review (puede tardar unos días)
+5. Espera review (puede tardar unos dÃ­as)
 6. Una vez aprobado, se mergea a main
 
-## 🐛 Reportar bugs
+## ðŸ› Reportar bugs
 
 Abre un [issue](https://github.com/DASILVALEO/Dicto/issues) con:
-- Descripción del problema
+- DescripciÃ³n del problema
 - Pasos para reproducir
-- Versión de Windows y Python
+- VersiÃ³n de Windows y Python
 - Salida de `python voice_dictation.py --test-mic`
 - Screenshots si aplica
 
-## 💬 Preguntas
+## ðŸ’¬ Preguntas
 
-¿Dudas? Abre un [Discussion](https://github.com/DASILVALEO/Dicto/discussions) en GitHub.
+Â¿Dudas? Abre un [Discussion](https://github.com/DASILVALEO/Dicto/discussions) en GitHub.
 
 ---
 
-**Gracias por hacer Dicto mejor. 🎤**
+**Gracias por hacer Dicto mejor. ðŸŽ¤**
+
+
