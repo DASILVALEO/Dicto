@@ -11,6 +11,13 @@ App de **dictado por voz** que escribe donde esté el cursor. Funciona en **Word
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 ![Stars](https://img.shields.io/github/stars/DASILVALEO/Dicto?style=social)
 
+## 📥 Download (elige uno)
+
+| Archivo | Tamaño | Descripción |
+|---|---|---|
+| **[Dicto-completo-v1.0.0.zip](https://github.com/DASILVALEO/Dicto/releases/latest)** | **58 MB** | ✅ Recomendado. Incluye Python 3.12 + todas las dependencias. No necesitas instalar nada más. |
+| [Dicto-ligero-v1.0.0.zip](https://github.com/DASILVALEO/Dicto/releases/latest) | 380 KB | Solo código fuente. Requiere Python 3.10+ ya instalado. Descarga más rápida. |
+
 ---
 
 ## ✨ ¿Por qué Dicto?
