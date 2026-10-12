@@ -1,38 +1,67 @@
-# 🎤 DictaIA
+# 🎤 Dicto
 
-**Dictado por voz que escribe donde esté el cursor.**
+> **Tu voz. Cualquier app. En un click.**
 
-Habla. Se escribe solo. Funciona en Word, Excel, navegador, VS Code, chat — cualquier app de Windows.
-
-> Open source · 4 GB RAM mínimo · Compatible con PCs antiguas · Online (MiniMax/IA) u Offline (Vosk)
+App de **dictado por voz** que escribe donde esté el cursor. Funciona en **Word, Excel, navegador, VS Code, chat, cualquier app de Windows**. Open source, gratis, pensado para correr en PCs con pocos recursos.
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-blue)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-yellow)
 ![RAM](https://img.shields.io/badge/RAM%20mínima-4%20GB-green)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Stars](https://img.shields.io/github/stars/DASILVALEO/Dicto?style=social)
 
 ---
 
-## ✨ ¿Por qué DictaIA?
+## ✨ ¿Por qué Dicto?
 
-La mayoría de apps de dictado:
-- ❌ Requieren CPU moderna (AVX2+)
-- ❌ Necesitan 8-16 GB de RAM
-- ❌ Piden cuenta y suscripción
-- ❌ Funcionan mal en PCs viejas
+Las apps de dictado actuales tienen un problema: asumen que tienes una PC moderna. La realidad es que millones de personas dictan desde laptops con 4 GB de RAM, CPUs de 2011, sin internet confiable.
 
-**DictaIA está pensado para correr donde otras no pueden**, en tu laptop vieja, en ese PC con 4GB de RAM que tienes en el rincón. Y lo hace con IA de verdad (no OCR de audio malo).
+**Dicto está diseñado para correr donde otros no pueden.**
 
-| | DictaIA | Wispr Flow | Dragon | Whisper local |
-|---|---|---|---|---|
-| 💰 Precio | Gratis | $15/mes | $500+ | Gratis |
-| 🌐 Offline | ✅ (Vosk) | ❌ | ❌ | ✅ |
-| 🐌 CPU antiguas | ✅ | ❌ | ❌ | ❌ |
-| 🪟 Multi-app | ✅ | ✅ | ✅ | ❌ (solo archivos) |
-| 🔓 Open source | ✅ | ❌ | ❌ | ✅ |
-| 🧠 Calidad nube | ✅ (MiniMax) | ✅ | ✅ | ❌ (lento local) |
-| 🛠️ Hotkey custom | ✅ | ✅ | ❌ | ❌ |
+| Característica | Detalle |
+|---|---|
+| 🧠 **IA de verdad** | MiniMax/IA (nube) o Vosk (offline) — ambos en español nativo |
+| 💾 **Solo 4 GB RAM** | No necesitas 8-16 GB como Dragon o Wispr |
+| 🐢 **CPU antigua OK** | Funciona en Sandy Bridge 2011, Ivy Bridge 2012 (sin AVX2) |
+| 🌐 **Online u Offline** | Nube para mejor calidad, offline para privacidad |
+| 🔓 **Open source** | MIT — usa, modifica, comparte |
+| 💰 **Gratis** | Sin suscripción, sin telemetría, sin cuentas obligatorias |
+| ⌨️ **Hotkey global** | Una tecla dicta en cualquier app |
+| 🎤 **VU meter** | Ves el nivel de tu voz en tiempo real |
+| 🪟 **Multi-app** | Word, Excel, navegador, VS Code, chat, donde sea |
+
+---
+
+## 🎯 Demo
+
+```
+┌────────────────────────────────────────────┐
+│ ●  ████████████░░░░░░░░░░░░░░░  3s         │  ← Overlay flotante
+└────────────────────────────────────────────┘
+    ↑
+    VU meter verde en vivo + cronómetro
+
+[Windows]  [Word]  [Excel]  [VSCode]  [Chrome]  [Telegram]  [Discord]
+       ↓        ↓       ↓        ↓         ↓           ↓          ↓
+      [Texto aparece donde está el cursor]    ← Funciona en TODAS
+```
+
+---
+
+## 🖼️ Configurador
+
+Doble-click en **"Configurador Dicto"** del escritorio. Panel con 3 pestañas:
+
+![Configurador](docs/configurador-screenshot.png)
+
+### Pestañas disponibles
+
+| Pestaña | Qué hace |
+|---|---|
+| 🔑 **API Keys** | Configura MiniMax/IA, Groq, OpenAI o Vosk. Botón "Probar conexión" por proveedor |
+| ⚙️ **Comportamiento** | Hotkey, idioma, auto-paste |
+| 📊 **Estado** | Ver proceso, auto-inicio, reiniciar watchdog, abrir config JSON |
 
 ---
 
@@ -40,16 +69,16 @@ La mayoría de apps de dictado:
 
 ```powershell
 # 1. Instala Python 3.10+ (marca "Add to PATH"): https://python.org/downloads
-# 2. Clona o descarga este repo
-git clone https://github.com/DASILVALEO/dictaia.git
-cd dictaia
+# 2. Descarga Dicto (botón verde "Code" → Download ZIP) o clona:
+git clone https://github.com/DASILVALEO/Dicto.git
+cd Dicto
 
 # 3. Doble-click en install.bat
 # 4. Pega tu API key de MiniMax/IA cuando lo pida
-# 5. Listo. Abre cualquier app y pulsa Alt Gr
+# 5. Listo. Abre Word, pulsa Alt Gr, habla 🎤
 ```
 
-No tienes cuenta de MiniMax/IA? Usa **Vosk offline** (español nativo, sin internet).
+**¿No tienes cuenta de MiniMax/IA?** Usa **Vosk offline** — funciona sin internet y sin API key (dicata en español sin más).
 
 ---
 
@@ -58,23 +87,44 @@ No tienes cuenta de MiniMax/IA? Usa **Vosk offline** (español nativo, sin inter
 | | Mínimo | Recomendado |
 |---|---|---|
 | **OS** | Windows 10 (1809+) | Windows 10/11 LTSC |
-| **RAM** | 4 GB | 8 GB+ |
-| **CPU** | Cualquier x86_64 (incluso Sandy Bridge 2011) | Moderno (Haswell+ si quieres Vosk rápido) |
+| **RAM** | **4 GB** ✅ | 8 GB+ |
+| **CPU** | Cualquier x86_64 (incluso Sandy Bridge 2011) | Moderno (Haswell+ para Vosk rápido) |
 | **Disco** | 200 MB | 500 MB |
-| **Internet** | Solo para MiniMax/IA (opcional) | No necesario con Vosk |
+| **Internet** | Solo si usas nube (MiniMax/IA, Groq, OpenAI) | No necesario con Vosk |
 | **Micrófono** | Cualquiera | Integrado o USB |
 
-✅ **Funciona en CPUs SIN AVX2** (Sandy Bridge 2011, Ivy Bridge 2012) — a diferencia de Whisper local.
+> 🧪 **Probado en**: MacBook Air Sandy Bridge (i5-2557M, 4GB RAM, Win 10 LTSC vía Boot Camp). Funciona perfectamente.
 
 ---
 
-## 🎯 Cómo se usa
+## 🤖 Proveedores de transcripción
+
+Dicto soporta múltiples proveedores. Cambia entre ellos cuando quieras desde el Configurador.
+
+### ☁️ Nube (mejor calidad)
+
+| Proveedor | Calidad | Costo | Setup |
+|---|---|---|---|
+| **MiniMax/IA** | ⭐⭐⭐⭐⭐ | Free tier generoso | https://platform.minimax.io |
+| **Groq** | ⭐⭐⭐⭐⭐ | Free tier | https://console.groq.com/keys |
+| **OpenAI** | ⭐⭐⭐⭐⭐ | ~$0.006/min (1¢/min) | https://platform.openai.com |
+
+### 🌑 Offline (sin internet, gratis)
+
+| Proveedor | Calidad | Costo | Modelo |
+|---|---|---|---|
+| **Vosk** | ⭐⭐⭐⭐ | Gratis | 57 MB, español nativo |
+
+---
+
+## 🎮 Cómo se usa
 
 1. **Abre cualquier app** (Word, navegador, chat, editor de código, Excel, Bloc de notas...)
 2. **Pon el cursor** donde quieras escribir
-3. **Pulsa `Alt Gr`** (Alt derecha) una vez → aparece la barrita flotante
-4. **Habla en español** — las barras verdes suben con tu voz
-5. **Pulsa `Alt Gr`** otra vez → el texto se pega donde está el cursor
+3. **Pulsa `Alt Gr`** (Alt derecha) — una vez
+4. **Aparece una barrita flotante** 🎤 con VU meter en vivo
+5. **Habla en español**
+6. **Pulsa `Alt Gr`** otra vez — el texto se pega donde está el cursor ✨
 
 ### Atajos incluidos
 
@@ -83,101 +133,59 @@ No tienes cuenta de MiniMax/IA? Usa **Vosk offline** (español nativo, sin inter
 | `Alt Gr` (mantener o pulsar) | Empezar/terminar dictado |
 | `Ctrl + Alt + Q` | Salir de la app |
 
-Configurables desde el **Configurador** (acceso directo del escritorio).
-
----
-
-## 🖥️ Captura
-
-```
-  ┌────────────────────────────────────────────┐
-  │ ● ████████░░░░░░░░░░░░░░░░░░░  3s         │  ← Grabando
-  └────────────────────────────────────────────┘
-       ↑ VU meter (verde = nivel de tu voz)
-```
-
-Overlay transparente con VU meter y cronómetro, flotando sobre cualquier app.
-
----
-
-## ⚙️ Configuración (GUI)
-
-Doble-click en **"Configurador dictaia"** del escritorio. Tres pestañas:
-
-### 🔑 API Keys
-- **MiniMax/IA** (default, recomendado — nube, alta calidad)
-- **Groq** (gratis, nube)
-- **OpenAI** (pago, nube)
-- **Botón "Probar conexión"** para verificar cada una
-
-### ⚙️ Comportamiento
-- Hotkey (default: `alt gr`)
-- Idioma (es, en, fr, de, pt, ja, zh, o vacío = auto)
-- Auto-paste (pegar donde esté el cursor)
-
-### 📊 Estado
-- Ver proceso (activo/no)
-- Auto-inicio en Windows
-- Reiniciar watchdog
-- Abrir archivo de config
-
-La API key se guarda **solo en tu PC** (`~/.dictation_config.json`). **Nunca** se sube a GitHub.
-
----
-
-## 🔌 Proveedores de transcripción
-
-### MiniMax/IA (default, recomendado)
-- **Ventajas**: Soporta español nativo, muy rápido, free tier generoso
-- **Setup**: https://platform.minimax.io → API Keys → Create
-- **Costo**: Free tier (con cuota mensual)
-
-### Groq
-- **Ventajas**: Whisper Large v3 ultra-rápido
-- **Setup**: https://console.groq.com/keys
-- **Costo**: Free tier
-
-### OpenAI Whisper
-- **Ventajas**: Calidad top de la industria
-- **Setup**: https://platform.openai.com/api-keys
-- **Costo**: ~$0.006/minuto (1¢ por minuto)
-
-### Vosk (offline, sin internet)
-- **Ventajas**: Sin API key, sin internet, español nativo
-- **Setup**: Automático al usar `dictation_vosk.py`
-- **Costo**: Gratis, modelo de 57 MB
+Personalizables desde el **Configurador**.
 
 ---
 
 ## 🏗️ Arquitectura
 
 ```
-[Tecla Alt Gr] → [keyboard.hook] → [sounddevice] → [API nube o Vosk]
-                                              ↓
-                                     [pyperclip + Ctrl+V]
-                                              ↓
-                                  [texto en el cursor] ✓
-                                              ↓
-[Overlay Tkinter] ← estado + VU meter en vivo
-[Watchdog .bat]   ← reinicia la app cada 3 min
+[Tecla Alt Gr] ──► [keyboard.hook] ──► [sounddevice]
+                                              │
+                                              ▼
+                                  [WAV 16kHz mono]
+                                              │
+                          ┌───────────────────┴──────────────┐
+                          ▼                                  ▼
+                  [API nube (MiniMax/IA)]            [Vosk local]
+                          │                                  │
+                          └──────────────┬───────────────────┘
+                                         ▼
+                                  [texto transcrito]
+                                         │
+                                         ▼
+                            [pyperclip + Ctrl+V]
+                                         │
+                                         ▼
+                              [texto en el cursor] ✓
+
+[Overlay Tkinter] ◄──── estado + VU meter en vivo
+[Watchdog .bat]   ◄──── reinicia la app cada 3 min
 ```
 
-- **Lenguaje**: Python 3.10+ (core), VBS (launchers), BAT (watchdog), Tkinter (overlay)
-- **Sin Electron, sin Tauri, sin Chromium** — pura Python + Windows nativo
-- **~200 líneas** de código principal
-- **0 deps nativas compiladas** — solo wheels pip
+**~200 líneas** de código Python. Sin Electron, sin Tauri, sin Chromium. Pura Python + Windows nativo.
 
 ---
 
 ## 🔧 Troubleshooting
 
-**"El micro no se abre"** → Verifica que el micrófono predeterminado funcione en Configuración de Windows > Sonido > Entrada.
+**El micro no se abre** → Verifica que el micrófono predeterminado funcione en Configuración de Windows > Sonido > Entrada.
 
-**"MiniMax/IA devuelve error"** → Tu API key expiró. Abre el **Configurador** y pega la nueva.
+**MiniMax/IA devuelve error** → Tu API key expiró. Abre el **Configurador** y pega la nueva.
 
-**"La hotkey no responde"** → Si usas Mac con Boot Camp, presiona **Alt derecha** (no izquierda). Si sigue sin ir, prueba `f12` o `right ctrl` desde el Configurador.
+**La hotkey no responde** → Si usas Mac con Boot Camp, presiona **Alt derecha** (no izquierda). Si sigue sin ir, prueba `f12` o `right ctrl` desde el Configurador.
 
-**"La app no inicia al prender la PC"** → Abre el **Configurador → Estado → "Auto-inicio"** para verificar.
+**La app no inicia al prender la PC** → Abre el **Configurador → Estado** para verificar el auto-inicio.
+
+---
+
+## 🌟 ¿Por qué lo hice?
+
+La primera vez que probé apps de dictado en mi MacBook Air del 2011 (4 GB RAM, Sandy Bridge), todas fallaron. SpeakoFlow crasheaba, whisper-local no cargaba, SayIt requería DLLs faltantes.
+
+Luego descubrí que necesitaba CPU con AVX2 (2017+) y 8+ GB de RAM. Pero muchos usuarios no tienen eso.
+
+**Dicto es para ellos.** Y también para mí.
 
 ---
 
@@ -185,9 +193,10 @@ La API key se guarda **solo en tu PC** (`~/.dictation_config.json`). **Nunca** s
 
 Pull requests bienvenidos. Áreas abiertas:
 - Soporte para más idiomas en Vosk
-- Mejorar la cancelación de ruido
-- Interfaz con icono en system tray (config rápido)
-- Auto-detección de contexto (cursor en chat vs editor)
+- Cancelación de ruido (RNNoise)
+- Icono en system tray para config rápido
+- Auto-detección de contexto (chat vs editor)
+- Empaquetado como `.exe` standalone con PyInstaller
 
 ---
 
@@ -197,14 +206,18 @@ MIT — usa, modifica, redistribuye libremente. Si haces algo cool con esto, con
 
 ---
 
-## 🙏 Créditos
+## 🙏 Inspirado en
 
-- [Vosk](https://alphacephei.com/vosk/) — motor ASR offline
-- [MiniMax/IA](https://platform.minimax.io) — STT en la nube
-- [keyboard](https://github.com/boppreh/keyboard) — global hotkey
-- [sounddevice](https://python-sounddevice.readthedocs.io) — captura de audio
-- Inspirado en Wispr Flow, Superwhisper, Dragon, Talon
+- [Wispr Flow](https://wispr.com) — UX pulida
+- [Dragon](https://nuance.com/dragon) — dictado profesional
+- [Superwhisper](https://superwhisper.com) — simplicidad
+- [Talon](https://talonvoice.com) — open source
+- [Vosk](https://alphacephei.com/vosk) — motor ASR offline
 
 ---
 
-**⭐ Si te sirve, dejá una estrella en GitHub — ayuda mucho.**
+## ⭐ Dale una estrella
+
+Si Dicto te ahorra tiempo, dejá una ⭐ en GitHub — ayuda mucho a que más gente lo descubra.
+
+**[⬇️ Descarga la última versión](https://github.com/DASILVALEO/Dicto/releases)**
