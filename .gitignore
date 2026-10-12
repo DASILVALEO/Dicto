@@ -18,3 +18,8 @@ foreground.ps1
 test_mic_minimax.py
 test_vosk_pipeline.py
 test_all_keyboard.py
+python/
+Lib/
+Scripts/
+*.zip
+
