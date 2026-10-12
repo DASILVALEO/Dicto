@@ -1,95 +1,210 @@
-# voz-a-texto
+# 🎤 DictaIA
 
-Aplicación de dictado por voz para Windows que escribe donde esté el cursor.
+**Dictado por voz que escribe donde esté el cursor.**
 
-## Características
+Habla. Se escribe solo. Funciona en Word, Excel, navegador, VS Code, chat — cualquier app de Windows.
 
-- **MiniMax STT** (nube): alta calidad, soporta español, rápido. Requiere API key.
-- **Vosk** (offline): funciona sin internet, modelo en español, sin API key.
-- **Hotkey global**: `Alt Gr` (configurable) para empezar/terminar dictado.
-- **Overlay visual**: barra flotante con cronómetro + VU meter de micrófono.
-- **Auto-paste**: el texto transcrito aparece donde esté el cursor.
-- **Watchdog**: la app se reinicia automáticamente si falla (cada 3 min).
+> Open source · 4 GB RAM mínimo · Compatible con PCs antiguas · Online (MiniMax/IA) u Offline (Vosk)
 
-## Requisitos
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Platform](https://img.shields.io/badge/Platform-Windows%2010%2F11-blue)
+![Python](https://img.shields.io/badge/Python-3.10%2B-yellow)
+![RAM](https://img.shields.io/badge/RAM%20mínima-4%20GB-green)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-- Windows 10 / 11 (probado en Windows 10 LTSC 19044)
-- Python 3.10 o superior
-- Micrófono funcional
+---
 
-## Instalación rápida
+## ✨ ¿Por qué DictaIA?
 
-1. Tener Python instalado (https://www.python.org/downloads/, marcar "Add to PATH")
-2. Doble-click en `install.bat`
-3. Pegar tu API key de MiniMax cuando lo pida
-4. Listo — doble-click en el acceso directo "Dictado por Voz (MiniMax)" del escritorio
+La mayoría de apps de dictado:
+- ❌ Requieren CPU moderna (AVX2+)
+- ❌ Necesitan 8-16 GB de RAM
+- ❌ Piden cuenta y suscripción
+- ❌ Funcionan mal en PCs viejas
 
-## Configuración interactiva (GUI)
+**DictaIA está pensado para correr donde otras no pueden**, en tu laptop vieja, en ese PC con 4GB de RAM que tienes en el rincón. Y lo hace con IA de verdad (no OCR de audio malo).
 
-Hay un **panel de configuración** con interfaz gráfica:
+| | DictaIA | Wispr Flow | Dragon | Whisper local |
+|---|---|---|---|---|
+| 💰 Precio | Gratis | $15/mes | $500+ | Gratis |
+| 🌐 Offline | ✅ (Vosk) | ❌ | ❌ | ✅ |
+| 🐌 CPU antiguas | ✅ | ❌ | ❌ | ❌ |
+| 🪟 Multi-app | ✅ | ✅ | ✅ | ❌ (solo archivos) |
+| 🔓 Open source | ✅ | ❌ | ❌ | ✅ |
+| 🧠 Calidad nube | ✅ (MiniMax) | ✅ | ✅ | ❌ (lento local) |
+| 🛠️ Hotkey custom | ✅ | ✅ | ❌ | ❌ |
 
-- Doble-click en el acceso directo "Configurador voz-a-texto" del escritorio
-- O ejecutar: `pythonw configurador.pyw`
+---
 
-Permite:
-- Ver y cambiar la API key de cualquier proveedor (MiniMax, Groq, OpenAI)
-- Probar la conexión con un botón
-- Cambiar la hotkey de dictado
-- Cambiar el idioma
-- Activar/desactivar auto-paste
-- Ver el estado actual (proceso, auto-inicio, etc.)
-- Reiniciar el watchdog sin reiniciar Windows
+## 🚀 Quick start (60 segundos)
 
-## Uso
+```powershell
+# 1. Instala Python 3.10+ (marca "Add to PATH"): https://python.org/downloads
+# 2. Clona o descarga este repo
+git clone https://github.com/DASILVALEO/dictaia.git
+cd dictaia
 
-1. **Abre cualquier app** (Word, navegador, VS Code, Excel, Bloc de notas)
-2. **Pon el cursor** donde quieras escribir
-3. **Pulsa `Alt Gr`** (Alt derecha) una vez — aparece la barrita verde/roja
-4. **Habla en español** — verás las barras moverse según tu volumen
-5. **Pulsa `Alt Gr`** otra vez — el texto se pega donde está el cursor
+# 3. Doble-click en install.bat
+# 4. Pega tu API key de MiniMax/IA cuando lo pida
+# 5. Listo. Abre cualquier app y pulsa Alt Gr
+```
 
-## Cambiar la API key
+No tienes cuenta de MiniMax/IA? Usa **Vosk offline** (español nativo, sin internet).
 
-Si rotás tu API key o querés cambiar de proveedor, abrí el **Configurador** (acceso directo del escritorio). La nueva key se guarda al instante. El watchdog se reinicia automáticamente para tomar los cambios.
+---
 
-## Configuración
+## 📦 Requisitos
 
-Edita `~/.dictation_config.json` (en tu carpeta de usuario):
-
-| Campo | Valores | Default |
+| | Mínimo | Recomendado |
 |---|---|---|
-| `provider` | `minimax` \| `groq` \| `openai` | `minimax` |
-| `minimax_api_key` | tu API key | (vacío) |
-| `language` | `es`, `en`, `""` (auto) | `es` |
-| `hotkey` | tecla o combinación | `alt gr` |
-| `quit_hotkey` | tecla o combinación | `ctrl+alt+q` |
-| `auto_paste` | `true` / `false` | `true` |
+| **OS** | Windows 10 (1809+) | Windows 10/11 LTSC |
+| **RAM** | 4 GB | 8 GB+ |
+| **CPU** | Cualquier x86_64 (incluso Sandy Bridge 2011) | Moderno (Haswell+ si quieres Vosk rápido) |
+| **Disco** | 200 MB | 500 MB |
+| **Internet** | Solo para MiniMax/IA (opcional) | No necesario con Vosk |
+| **Micrófono** | Cualquiera | Integrado o USB |
 
-## Hotkeys admitidos
+✅ **Funciona en CPUs SIN AVX2** (Sandy Bridge 2011, Ivy Bridge 2012) — a diferencia de Whisper local.
 
-- Teclas simples: `alt gr`, `f12`, `insert`, `pause`, `right alt`, `right ctrl`
-- Combinaciones: `ctrl+shift+space`, `ctrl+alt+r`, `f9`+`f10`, etc.
+---
 
-## Archivos
+## 🎯 Cómo se usa
 
-- `voice_dictation.py` — script principal (cloud: MiniMax, Groq, OpenAI)
-- `dictation_vosk.py` — alternativo offline (Vosk)
-- `overlay.py` — barra visual flotante
-- `configurador.py` / `configurador.pyw` — panel GUI de configuración
-- `configurador_silent.vbs` — launcher sin consola del configurador
-- `watchdog_dictation.bat` — reinicia la app si muere
-- `start_dictation_silent.vbs` — launcher sin consola
-- `install.bat` — instalador para PC nueva
-- `requirements.txt` — dependencias Python
+1. **Abre cualquier app** (Word, navegador, chat, editor de código, Excel, Bloc de notas...)
+2. **Pon el cursor** donde quieras escribir
+3. **Pulsa `Alt Gr`** (Alt derecha) una vez → aparece la barrita flotante
+4. **Habla en español** — las barras verdes suben con tu voz
+5. **Pulsa `Alt Gr`** otra vez → el texto se pega donde está el cursor
 
-## Crear API key de MiniMax
+### Atajos incluidos
 
-1. Ir a https://platform.minimax.io
-2. Sign in
-3. Click "Create API Key" en API Keys
-4. Copiar y pegar en `install.bat` o en `~/.dictation_config.json`
+| Atajo | Acción |
+|---|---|
+| `Alt Gr` (mantener o pulsar) | Empezar/terminar dictado |
+| `Ctrl + Alt + Q` | Salir de la app |
 
-## Compatibilidad con CPUs antiguas
+Configurables desde el **Configurador** (acceso directo del escritorio).
 
-- Funciona en CPUs SIN AVX2 (Sandy Bridge 2011, Ivy Bridge 2012, etc.)
-- NO usa Whisper local (sí usa cloud con MiniMax o Vosk local)
+---
+
+## 🖥️ Captura
+
+```
+  ┌────────────────────────────────────────────┐
+  │ ● ████████░░░░░░░░░░░░░░░░░░░  3s         │  ← Grabando
+  └────────────────────────────────────────────┘
+       ↑ VU meter (verde = nivel de tu voz)
+```
+
+Overlay transparente con VU meter y cronómetro, flotando sobre cualquier app.
+
+---
+
+## ⚙️ Configuración (GUI)
+
+Doble-click en **"Configurador dictaia"** del escritorio. Tres pestañas:
+
+### 🔑 API Keys
+- **MiniMax/IA** (default, recomendado — nube, alta calidad)
+- **Groq** (gratis, nube)
+- **OpenAI** (pago, nube)
+- **Botón "Probar conexión"** para verificar cada una
+
+### ⚙️ Comportamiento
+- Hotkey (default: `alt gr`)
+- Idioma (es, en, fr, de, pt, ja, zh, o vacío = auto)
+- Auto-paste (pegar donde esté el cursor)
+
+### 📊 Estado
+- Ver proceso (activo/no)
+- Auto-inicio en Windows
+- Reiniciar watchdog
+- Abrir archivo de config
+
+La API key se guarda **solo en tu PC** (`~/.dictation_config.json`). **Nunca** se sube a GitHub.
+
+---
+
+## 🔌 Proveedores de transcripción
+
+### MiniMax/IA (default, recomendado)
+- **Ventajas**: Soporta español nativo, muy rápido, free tier generoso
+- **Setup**: https://platform.minimax.io → API Keys → Create
+- **Costo**: Free tier (con cuota mensual)
+
+### Groq
+- **Ventajas**: Whisper Large v3 ultra-rápido
+- **Setup**: https://console.groq.com/keys
+- **Costo**: Free tier
+
+### OpenAI Whisper
+- **Ventajas**: Calidad top de la industria
+- **Setup**: https://platform.openai.com/api-keys
+- **Costo**: ~$0.006/minuto (1¢ por minuto)
+
+### Vosk (offline, sin internet)
+- **Ventajas**: Sin API key, sin internet, español nativo
+- **Setup**: Automático al usar `dictation_vosk.py`
+- **Costo**: Gratis, modelo de 57 MB
+
+---
+
+## 🏗️ Arquitectura
+
+```
+[Tecla Alt Gr] → [keyboard.hook] → [sounddevice] → [API nube o Vosk]
+                                              ↓
+                                     [pyperclip + Ctrl+V]
+                                              ↓
+                                  [texto en el cursor] ✓
+                                              ↓
+[Overlay Tkinter] ← estado + VU meter en vivo
+[Watchdog .bat]   ← reinicia la app cada 3 min
+```
+
+- **Lenguaje**: Python 3.10+ (core), VBS (launchers), BAT (watchdog), Tkinter (overlay)
+- **Sin Electron, sin Tauri, sin Chromium** — pura Python + Windows nativo
+- **~200 líneas** de código principal
+- **0 deps nativas compiladas** — solo wheels pip
+
+---
+
+## 🔧 Troubleshooting
+
+**"El micro no se abre"** → Verifica que el micrófono predeterminado funcione en Configuración de Windows > Sonido > Entrada.
+
+**"MiniMax/IA devuelve error"** → Tu API key expiró. Abre el **Configurador** y pega la nueva.
+
+**"La hotkey no responde"** → Si usas Mac con Boot Camp, presiona **Alt derecha** (no izquierda). Si sigue sin ir, prueba `f12` o `right ctrl` desde el Configurador.
+
+**"La app no inicia al prender la PC"** → Abre el **Configurador → Estado → "Auto-inicio"** para verificar.
+
+---
+
+## 🤝 Contribuir
+
+Pull requests bienvenidos. Áreas abiertas:
+- Soporte para más idiomas en Vosk
+- Mejorar la cancelación de ruido
+- Interfaz con icono en system tray (config rápido)
+- Auto-detección de contexto (cursor en chat vs editor)
+
+---
+
+## 📄 Licencia
+
+MIT — usa, modifica, redistribuye libremente. Si haces algo cool con esto, contame.
+
+---
+
+## 🙏 Créditos
+
+- [Vosk](https://alphacephei.com/vosk/) — motor ASR offline
+- [MiniMax/IA](https://platform.minimax.io) — STT en la nube
+- [keyboard](https://github.com/boppreh/keyboard) — global hotkey
+- [sounddevice](https://python-sounddevice.readthedocs.io) — captura de audio
+- Inspirado en Wispr Flow, Superwhisper, Dragon, Talon
+
+---
+
+**⭐ Si te sirve, dejá una estrella en GitHub — ayuda mucho.**
