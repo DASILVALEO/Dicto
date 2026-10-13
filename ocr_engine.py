@@ -78,24 +78,67 @@ def encode_image(image_path: Path) -> str:
         return base64.b64encode(f.read()).decode("utf-8")
 
 
+def compress_image(image_path: Path, max_size_mb: float = 2.0, max_dim: int = 1800) -> tuple[Path, bool]:
+    """Comprime una imagen si es muy grande o pesada.
+
+    Retorna (path_al_archivo_comprimido, fue_comprimido).
+    Si no necesita compresion, retorna (path_original, False).
+    """
+    from PIL import Image
+    file_size_mb = image_path.stat().st_size / (1024 * 1024)
+    if file_size_mb <= max_size_mb:
+        # Verificar tamano de pixeles
+        try:
+            with Image.open(image_path) as img:
+                if max(img.size) <= max_dim:
+                    return image_path, False
+        except Exception:
+            return image_path, False
+
+    # Comprimir
+    compressed_path = image_path.parent / f"{image_path.stem}_compressed.jpg"
+    try:
+        with Image.open(image_path) as img:
+            # Convertir a RGB si es necesario
+            if img.mode in ("RGBA", "LA", "P"):
+                img = img.convert("RGB")
+            # Redimensionar si es muy grande
+            if max(img.size) > max_dim:
+                ratio = max_dim / max(img.size)
+                new_size = (int(img.size[0] * ratio), int(img.size[1] * ratio))
+                img = img.resize(new_size, Image.LANCZOS)
+            # Guardar como JPG comprimido
+            quality = 85 if file_size_mb > 5 else 90
+            img.save(compressed_path, "JPEG", quality=quality, optimize=True)
+        new_size_mb = compressed_path.stat().st_size / (1024 * 1024)
+        print(f"[OCR] Comprimida: {file_size_mb:.1f}MB -> {new_size_mb:.1f}MB")
+        return compressed_path, True
+    except Exception as e:
+        print(f"[OCR] No se pudo comprimir: {e}")
+        return image_path, False
+
+
 def extract_with_minimax(image_path: Path) -> dict:
     """Extrae datos de factura usando MiniMax Vision."""
     if not API_KEY:
         return {"error": "API key no configurada"}
 
-    # Verificar tamano del archivo
+    # Comprimir imagen si es muy grande
     file_size_mb = image_path.stat().st_size / (1024 * 1024)
-    if file_size_mb > 20:
-        return {"error": f"Imagen muy grande ({file_size_mb:.1f}MB). Maximo 20MB."}
+    print(f"[OCR] Imagen original: {file_size_mb:.1f}MB")
+    if file_size_mb > 2:
+        print("[OCR] Comprimiendo imagen para acelerar...")
+        image_path, was_compressed = compress_image(image_path, max_size_mb=2.0, max_dim=1800)
+        if was_compressed:
+            new_size = image_path.stat().st_size / (1024 * 1024)
+            print(f"[OCR] Imagen comprimida: {new_size:.1f}MB")
 
     img_b64 = encode_image(image_path)
     ext = image_path.suffix.lower().lstrip(".")
     mime = "image/jpeg" if ext in ("jpg", "jpeg") else f"image/{ext}"
     data_url = f"data:{mime};base64,{img_b64}"
-
-    # Tama~o de la imagen en base64
     b64_size_kb = len(img_b64) / 1024
-    print(f"[OCR] Imagen: {file_size_mb:.1f}MB ({b64_size_kb:.0f}KB base64)")
+    print(f"[OCR] Enviando a MiniMax Vision ({b64_size_kb:.0f}KB base64)...")
 
     try:
         r = requests.post(
@@ -112,7 +155,7 @@ def extract_with_minimax(image_path: Path) -> dict:
                 "temperature": 0.1,
                 "max_tokens": 2000
             },
-            timeout=30  # 30 segundos maximo
+            timeout=120  # 2 minutos maximo (facturas reales pueden tardar)
         )
         r.raise_for_status()
         content = r.json()["choices"][0]["message"]["content"].strip()
@@ -128,7 +171,7 @@ def extract_with_minimax(image_path: Path) -> dict:
             content = content[start:end]
         return json.loads(content)
     except requests.Timeout:
-        return {"error": "La API de MiniMax tardo demasiado (>30s). Intenta con una imagen mas pequena o menos pesada."}
+        return {"error": "La API de MiniMax tardo mas de 2 min. La imagen puede ser muy compleja. Intenta con una version reducida."}
     except requests.ConnectionError:
         return {"error": "Sin conexion a internet. Verifica tu red."}
     except requests.HTTPError as e:
