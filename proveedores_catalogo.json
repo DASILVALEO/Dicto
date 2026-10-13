@@ -1,0 +1,2541 @@
+{
+  "fecha_extraccion": "2026-10-13",
+  "fuente": "PROVEEDORES 2021+.xlsx",
+  "total": 362,
+  "proveedores": [
+    {
+      "rif": "J-40626995-6",
+      "nombre": "100 % REFRIGERACION, C.A",
+      "direccion": "AV. NICOLAS ROLANDO,EDF.PLAZA,LOCAL NRO 4,SECTOR VILLA DEL MAR -BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41096407-3",
+      "nombre": "100% REFRIGERACION BARRIO SUCRE, C.A",
+      "direccion": "CALLE SUCRE-EDIF. NRO 7-84-PISO PB-LOCAL NRO 1-SECTOR BARRIO SUCRE-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31723778-1",
+      "nombre": "100% REFRIGERACION COSTANERA, C.A.",
+      "direccion": "AV. FUERZAS ARMADAS,LOCAL NRO 2,BARRIO BRISAS DEL NEVERI-BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31274988-1",
+      "nombre": "20-20 AUTO ELECTRIC C A",
+      "direccion": "CALLE SUCRE-LOCAL 96A-SECTOR BARRIO SUCRE-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50023296-9",
+      "nombre": "ABA CORP, C.A",
+      "direccion": "AV,COUNTRY-FRENTE AL CONJUNTO RESIDENCIAL PARQUE GREEN-NIVEL PB,LOCAL S/N,NUEVA BARCELONA-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-31517043-4",
+      "nombre": "ABASTO Y LICORERIA MIDO, C. A",
+      "direccion": "AV. CUMANAGOTO-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00000350-5",
+      "nombre": "ACUMULADORES DUNCAN, C.A.",
+      "direccion": "AV. MILAN,EDIF.NAGEBEN,PISO 1, LOS RUICES SUR,CARACAS-EDO.MIRANDA./COMISIONISTA DUNCAN BARCELONA-AV.INTERCOMUNAL JORGE RODRIGUEZ,CC LAS GARZAS-LOCALES D1-D1A,SECTOR LAS GARZAS.MUNICIPIO LIC.DIEGO BAUTISTA URBANEJA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31475369-0",
+      "nombre": "ADISLACT 02,C.A",
+      "direccion": "AV. PROLONGACION AV. ESPAÑA,SALIDA A PTO LA CRUZ,QTA EL ROSARIO -SECTOR PARQUE FERIAL-EL TIGRE-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50058341-9",
+      "nombre": "ADISLAMAR,C.A",
+      "direccion": "AV E, LOCAL NRO 31,SECTOR ZONA INDUSTRIAL LOS MONTONES,BARCELONA,ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40723534-6",
+      "nombre": "AGRO PETS, C.A.",
+      "direccion": "AV. PEDRO MARIA FREITES, LOCAL NRO S/N, SECTOR BUENOS AIRES II, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "G-20000021-0",
+      "nombre": "ALCALDÍA DEL MUNICIPIO SIMON BOLÍVAR",
+      "direccion": "CALLE JUNCAL ENTRE BOLIVAR, PASEO 27 DE ABRIL,EDIFICIO PALACIO MUNICIPAL, PISO PB,OF. PALACIO MUNICIPAL,BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-31540216-5",
+      "nombre": "ALDISV (ALDISVCA),C.A",
+      "direccion": "AV. FUERZAS ARMADAS, LOCAL CENTRO INDUSTRIAL BARCELONA, Nro 28-SECTOR LA ADUANA, BARCELONA-EDO. ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40123984-6",
+      "nombre": "ALIMENTOS MW, C.A",
+      "direccion": "CALLE LAS FLORES LOCAL NRO 01-BARRIO PALOTAL-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00041312-6",
+      "nombre": "ALIMENTOS POLAR COMERCIAL,C.A",
+      "direccion": "AV. 4TA TRANSVERSAL CON 2DA. AVENIDA, EDIF. CENTRO EMPRESARIAL POLAR PISO 1, OF. PRICIPAL,URB. LOS CORTIJOS DE LOURDES ,CARACAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40025282-2",
+      "nombre": "ALIMENTOS SAN CHARBEL, C.A",
+      "direccion": "CALLE RIVERA #34, EL PENSIL-PUERTO LA CRUZ-ESTADO ANZOATEGUI.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-30273155-0",
+      "nombre": "ALIMENTOS VDV, C. A",
+      "direccion": "AV. PASEO COLON, C C CRISTOFORO COLOMBO, NIVEL 1, OF 4, SECTOR PASEO COLON-PUERTO LA CRUZ-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29371601-2",
+      "nombre": "ALVA FLOTA, C.A",
+      "direccion": "CALLE SUCRE C/C,CALLE SAN MARTIN,NRO 2-SECTOR BARRIO SUCRE-BARCELONA-ESTADO ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00059184-9",
+      "nombre": "AMERICAN DISTRIBUTION DE VENEZUELA, C. A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31639763-7",
+      "nombre": "ANDINA FOOD SERVICES CARACAS, C.A.",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-15878505-2",
+      "nombre": "ANDREA BEATRIZ ACOSTA PARRA",
+      "direccion": "SECTOR ANDRES BELLO, SECTOR EL PARAISO-PTO LA CRUZ EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-03594718-0",
+      "nombre": "ANGEL LUIS APONTE GERARDI",
+      "direccion": "SECTOR 3,CALLE 3. CASA Nro32,URB.BRISAS DEL MAR,BARCELONA,EDO-ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31092331-0",
+      "nombre": "ATLANTIC FOODS & DELICATESSES, C.A.",
+      "direccion": "CALLE BELLA VISTA,CASA NRO 83,SECTOR BELLA VISTA,PUERTO LA CRUZ,EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29681156-3",
+      "nombre": "AUTO ELECTRIC GUAICAIPURO, .CA",
+      "direccion": "AV. CAJIGAL-EDIF.ALEX-PISO PB-LOCAL 2-SECTOR PORTUGAL-BARCELONA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31061064-9",
+      "nombre": "AUTO TORNILLOS AREMIL, S.A",
+      "direccion": "CALLE SUCRE-LOCAL NRO 3-BARRIO SUCRE-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41262255-2",
+      "nombre": "AUTOMERCADO CITY LIDER, C.A",
+      "direccion": "AV.CARACAS-LOCAL NRO S/N-SECTOR CASCO CENTRAL-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30772783-7",
+      "nombre": "AUTOMOTRIZ BRAVO 3000, C. A",
+      "direccion": "CALLE SUCRE,NRO 8-24, SECTOR BARRIO SUCRE-BARCELONA -EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40350208-0",
+      "nombre": "AUTOPLATINAS Y SERVICIOS EL POLLO, C.A",
+      "direccion": "AV PEDRO MARIA FREITES, LOCAL NRO 2-12-SECTOR CENTRO BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41178057-0",
+      "nombre": "AVICARNES MW, C.A",
+      "direccion": "CTRA AUTOPISTA-CARACAS MARGEN DERECHA,LOCAL CENTRO DE ALMACENAMIENTO SANO-GALPON NROG-26, ZONA INDUSTRIAL LOS MESONES BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50510032-7",
+      "nombre": "BAKERY BAO BAO C.A",
+      "direccion": "AV.CENTURION,LOCAL NRO 133-URB.TRICENTENARIA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00046919-9",
+      "nombre": "BIMBO DE VENEZUELA, C.A",
+      "direccion": "AV. PROLONGACION II, EDIF. BIMBO DE VENEZUELA, NRO. S/N ZONA IND. DEL ESTE, URB. MATURIN, SECTOR LOS BARBECHOS GUARENAS, ESTADO MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50100978-3",
+      "nombre": "BODEGON & MARKET 281,C.A",
+      "direccion": "AV. 5 DE JULIO CON INTERSEPCION DE LA AV. COUNTRY CLUB, LOCAL RONGRAT NRO. 01- PB, URB. URDANETA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50343059-1",
+      "nombre": "BODEGUITA 2707 ANZOATEGUI,C.A",
+      "direccion": "AV.GUZMÁN LANDER,LOCAL NRO S/N,SECTOR COLINAS DEL NEVERI-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50151505-0",
+      "nombre": "BRICOMAX, C. A.",
+      "direccion": "CALLE LOS ROSALES-CASA NRO 12-62-SECTOR BARRIO COREA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30838184-5",
+      "nombre": "BRILL'S DE ORIENTE, C. A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40832735-0",
+      "nombre": "BRUKER C.A",
+      "direccion": "CALLE GUAYAQUIL -LOCAL NRO 7-78-SECTOR BARRIO SUCRE-BARCELONA.-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31108443-6",
+      "nombre": "C Y A SUPPLIES,C.A",
+      "direccion": "AV.PEDRO MARIA FREITES,CC YOLY TOYS,NIVEL PB,LOCAL 2,SECTOR BUENOS AIRES",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00006748-1",
+      "nombre": "C.A CIGARRERA BIGOTT,SUCS",
+      "direccion": "AV. FRANCISCO DE MIRANDA,EDIF BIGOTT-PISO PB LOCAL PB. LOS RUICES-CARACAS-MIRANDA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-07000344-8",
+      "nombre": "C.A. CERVECERIA REGIONAL",
+      "direccion": "AV 17(LOS HATICOS) N112-12,LOCAL NRO.SECTOR MARACAIBO-EDO.ZULIA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00030361-4",
+      "nombre": "C.A. SUCESORA DE JOSE PUIG & CIA",
+      "direccion": "CALLE 2da TRANSVERSAL-EDIF. PUIG,PB,URB.LOS CORTIJOS DE LOURDES,CARACAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-07032176-8",
+      "nombre": "CARGILL DE VENEZUELA, S.R.L.",
+      "direccion": "AV. FRANCISCO DE MIRANDA ,EDIF.PARQUE CRISTAL-PISO 8-OF 8-1, URB.LOS PALOS GRANDES,CARACAS( CHACAO),MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-11852193-1",
+      "nombre": "CARLOS CÉSAR CARREÑO VELASQUEZ",
+      "direccion": "CALLE 6. CASA NRO 246, URBANIZACIÓN LOS VIDRIALES,SECTOR ESTE,BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-10293613-9",
+      "nombre": "CARLOS JOSE LUGO",
+      "direccion": "AV. LAS DELICIAS,CASA Nro B-100,SECTOR BRISAS DEL MAR.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-08247259-9",
+      "nombre": "CARMEN JOSEFINA SILVA NEGRON",
+      "direccion": "CALLE MONAGAS C/C Av. CARACAS, PB LOCAL 2, BARCELONA EDO ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31682963-4",
+      "nombre": "CARPER DISTRIBUCIONES C.A.",
+      "direccion": "CALLE ANDRES ELOY BLANCO, SECTOR BARRIO SUCRE, CASA Nº 7-22.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50691624-0",
+      "nombre": "CASA PANA 1234, C.A",
+      "direccion": "AV. FUERZAS ARMADAS, CRUCE CON AVENIDA NICOLAS ROLANDO, LOCAL NRO 5-A 6-A, SECTOR LA ADUANA, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00127649-1",
+      "nombre": "CASTELO BRANCO INDUSTRIAL, C.A",
+      "direccion": "",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-30045684-6",
+      "nombre": "CAUCHOS SORA,C. A",
+      "direccion": "AV.FUERZAS ARMADAS, C/C LA FE-EDIF.D AMBROSIO-PISO PB,LOCAL 1, PLANTA BAJA, URB.BARRIO COLOMBIA-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00006275-7",
+      "nombre": "CENTRAL MADEIRENSE, C.A",
+      "direccion": "CTRA VIEJA PETARE SANTA LUCIA, KM 5, EDIF. CM,PISO PB,OF CENTRO CM,SECTOR FILAS DE MARICHE.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50351304-7",
+      "nombre": "CENTRO DE LECHERIA, C.A.",
+      "direccion": "AV. ROMULO GALLEGOS, LOCAL S/N, SECTOR SAN MIGUEL, VALLE LA PASCUA- GUARICO.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00006372-9",
+      "nombre": "CERVECERIA POLAR,C.A",
+      "direccion": "AV. 2DA. DE LOS CORTIJOS DE LOURDES,PLANTA POLAR,URB.LOS CORTIJOS DE LOURDES,ZONA POSTAL 1071.CARACAS-VENEZUELA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29423916-1",
+      "nombre": "CHACIN SOUSA, C. A",
+      "direccion": "CALLE EL TALLER Nº 10-34, URB. PORTUGAL ARRIBA BARCELONA, EDO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00143134-9",
+      "nombre": "CHARCUTERIA TOVAR,C.A",
+      "direccion": "",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-00047357-9",
+      "nombre": "CHARCUTERIA VENEZOLANA,C.A",
+      "direccion": "AV.FRANCISCO DE MIRANDA,EDIF. CENTRO SEGUROS LA PAZ, PISO 3, OFIC. ALA NORTE Nro.32-D,LA CALIFORNIA NORTE,(PETARE) MIRANDA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40758431-6",
+      "nombre": "CHARTER NETWORK, C.A.",
+      "direccion": "AV. PRINCIPAL DE BOLEITA NORTE, EDIF. PROCA, PISO PB, LOCAL 1, URB.BOLEITA NORTE, MIRANDA,CARACAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50516864-9",
+      "nombre": "CHICK-N-PIZZA BARCELONA, C.A",
+      "direccion": "AV. NUEVA BARCELONA-PARCELA DE TERRENO B, LOCAL # S/N, NUEVA BARCELONA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40258114-9",
+      "nombre": "CITY PLAST,C.A",
+      "direccion": "AV. MUNICIPAL-LOCAL NRO 148-SECTOR CENTRO-PUERTO LA CRUZ-EDO. ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30923225-8",
+      "nombre": "COMERCIAL CITY CENTER,C.A",
+      "direccion": "AV. CARACAS-LOCAL NRO 7-27-SECTOR CAYAURIMA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41263827-0",
+      "nombre": "COMERCIAL F & Z,C.A",
+      "direccion": "AV. CUMANAGOTOS-C/C ANCIANATO-LOCAL S/N-SECTOR VIA URBANIZACIÓN-BRISAS DEL MAR-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40076137-9",
+      "nombre": "COMERCIAL ROMY,C.A",
+      "direccion": "AV.PRINCIPAL,CASA 47-SECTOR SAN MARIN CARÙPANO-EDO. SUCRE",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40999000-1",
+      "nombre": "COMERCIAL TINITO BARCELONA,C.A",
+      "direccion": "CALLE VIA PUENTE AYALA, CONDOMINIO INDUSTRIAL, FUTURO LOCAL 4,ZONA INDUSTRIAL MESONES, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50572323-5",
+      "nombre": "COMERCIAL WIN+88, CA",
+      "direccion": "AV.CARACAS-LOCAL NRO S/N-SECTOR CASCO CENTRAL-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40198353-7",
+      "nombre": "COMERCIAL ZABUD.C.A",
+      "direccion": "AV. NICOLAS ROLANDO,LOCAL NRO 4-101, BARRIO LA ADUANA,BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-295338642-7",
+      "nombre": "COMERCIALIZADORA CONFISUR,C.A",
+      "direccion": "AV. FUERZAS ARMADAS-LOCAL NRO 101-2, SECTOR LA ADUANA-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40121034-1",
+      "nombre": "COMERCIALIZADORA EL GRAN JADE VENEZUEA,C.A",
+      "direccion": "CARRETERA VIA AL SUR ACTUAL AVENIDA RAUL LEONI, NRO S/N-SECTOR CENTRO-MATURI-EDO. MONAGAS",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41238099-0",
+      "nombre": "COMERCIALIZADORA LA BUENA FORTUNA, C.A.",
+      "direccion": "CARRERA 4 CON CALLE 4, ZONA INDUSTRIAL II,GALPON 75, BARQUISIMETO EDO. LARA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29788735-0",
+      "nombre": "COMERCIALIZADORA LOS GOMES, C.A",
+      "direccion": "CALLE SAN CARLOS-GALPON S/N-SECTOR LA ADUANA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40107514-2",
+      "nombre": "COMERCIALIZADORA LUSO VENEZOLANA(LUVEN),C.A",
+      "direccion": "CALLE EL TALLER Nº 10-46, URB. PORTUGAL ARRIBA BARCELONA, EDO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41190474-0",
+      "nombre": "COMERCIALIZADORA PACA I, C.A",
+      "direccion": "AV.MUNICIPAL CRUCE CON CALLE CONCORDIA-LOCAL PLAZA MAR-NRO 15-SECTOR CASCO CENTRAL PUERTO LA CRUZ-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50010251-8",
+      "nombre": "COMERCIALIZADORA TU HOGAR, C.A",
+      "direccion": "AV.MIRANDA-EDIF.LA GRAN TABERNA ORIENTAL-PISO PB-LOCAL PB SECTOR PALOTAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-40614568-8",
+      "nombre": "COMERCIALIZADORA Y DISTRIBUIDORA GARAJONAY, C.A",
+      "direccion": "AV.CENTURION,C. C.MINI CENTRO COMERCIAL EL RECREO,NIVEL PB,LOCAL NRO 3,URB. NUEVA BARCELONA,BARCELONA-ESTADO ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41075625-0",
+      "nombre": "COMPUGATE CENTER VALENCIA, C.A",
+      "direccion": "CALLE 134(PROVIDENCIA), CASA NRO.96-41,URBANIZACION LOS SAUCES, VALENCIA.ESTADO CARABOBO.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40564305-6",
+      "nombre": "CONFIORIENTE LB, C.A",
+      "direccion": "AV. FUERZAS ARMADAS CON CALLE ANDRES BELLO,LOCAL GALPON NRO 7,SECTOR LA ADUANA.BARCELONA-EDO. ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40260594-3",
+      "nombre": "CONFITES LUGMAR, C.A",
+      "direccion": "CALLE LAS DELICIAS, CASA NRO B-100,SECTOR BRISAS DEL MAR.BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30212090-0",
+      "nombre": "COPIATODO, C A",
+      "direccion": "AV. GUZMAN LANDER, EDIF. ROSA, PISO PB, LOCAL A-1, SECTOR COLINAS DEL NEVERI-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "G-20010014-1",
+      "nombre": "CORPORACION ELÉCTRICA NACIONAL,S.A(CORPOELEC)",
+      "direccion": "AV.VOLIMER ENTRE CARACAS Y ALAMEDA-EDIF. CENTRO EMPRESARIAL CARACAS,PISO 6 OF SAN BERNARDINO CARACAS-VENEZUELA",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-40811065-2",
+      "nombre": "CORPORACION INLAF, C.A",
+      "direccion": "AV.QUIBOR KM 6, LOCAL NRO FABRICA ARTESANAL,BARRIO CARIBE,BARQUISIMERO, EDO.LARA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30975897-7",
+      "nombre": "CORPORACION INVECA, C.A",
+      "direccion": "CALLE ALTAGRACIA-EDIF. P y G ,PISO 4,OF.S/N, ,SECTOR LA TRINIDAD,URBANIZACIÓN SOROCAIMA-CARACAS.-EDO. MIRANDA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40684002-5",
+      "nombre": "CORPORACION SATPLAS C. A.",
+      "direccion": "AV.PPAL.DE CASTILLEJO,CASA NRO E-11-10,CONJUNTO RESIDENCIAL C.R.LA ESPERANZA,URB.CASTILLEJO,GUATIRE,EDO.MIRANDA.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-30240664-1",
+      "nombre": "CORPORACION TELEMIC, C.A.",
+      "direccion": "AV. LOS LEONES CON CALLE CARONI,EDIF. CENTRO EMPRESARIAL CARACAS,PISO 3, OF 3-1, URBANIZACIÓN FUNDALARA-BARQUISIMETO-EDO. LARA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29713181-7",
+      "nombre": "CORPORACION WALLE, C.A",
+      "direccion": "AVENIDA GUZMAN LANDER-EDIFICIO 28-26-PISO 1- OFICINA 1-SECTOR COLINAS DEL NEVERI-BARCELONA-ESTADO ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30468971-3",
+      "nombre": "CORPORACIÓN DIGITEL,C.A",
+      "direccion": "AV. PRINCIPAL DE LA CASTELLANA CON CALLE BLANDIN-EDIF. TORRE DIGITEL,PISO 19-CF -P 19,URBANIZACIÒN LA CASTELLANA-CARACAS( CHACAO) MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-12363820-0",
+      "nombre": "CRISTIAN JOSÈ SOCORRO ADAMES",
+      "direccion": "AV. INTERCOMUNAL,EDIF.TURPIAL,PISO 3,APTO 3-1, URB. ISLA BORRACHA.SECTOR EL MAGUEY,PUERTO LA CRUZ-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30383621-6",
+      "nombre": "Coca Cola Femsa de Venezuela, S.A",
+      "direccion": "PLANTA BARCELONA, CARRETERA LOS MONTONES, SECTOR OJO DE AGUA. BARCELONA, ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31741180-3",
+      "nombre": "DAFILCA ORIENTE, C.A",
+      "direccion": "AV.JOSE ANTONIO ANZOATEGUI,C.C RIO NEVERI N/A LOCAL LOCAL COMERCIAL GALPON NRO 4, URB. N/A,BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50112092-7",
+      "nombre": "DE LO ALTO 777, C.A",
+      "direccion": "CALLE SUCRE, LOCAL NRO.106-SECTOR BARRIO SUCRE,BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29803956-6",
+      "nombre": "DIJIMECA 2009, C.A",
+      "direccion": "CALLE LIBERAL-CASA NRO 0-19-SECTOR CASCO CENTRAL-BARCELONA-EDO.ANZÓATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30260682-9",
+      "nombre": "DIMACO, C. A",
+      "direccion": "CALLE SAN MARTIN CON ORINOCO,NRO 20- SECTOR CAMPO CLARO, BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30933553-7",
+      "nombre": "DIPOFRES C A",
+      "direccion": "CALLE NUEVA-CASA NRO 4-291-SECTOR CAMINO NUEVO-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30064183-0",
+      "nombre": "DIPROCHER BARCELONA,C.A",
+      "direccion": "AV. JOSE ANTONIO ANZOATEGUI, C.C. AEROPUERTO, NIVEL 1, LOCAL GALPON 8 Y 9 SECTOR AEROPUERTO, BARCELONA ESTADO ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41175818-3",
+      "nombre": "DISETNOCA,C.A",
+      "direccion": "CALLE 9,ANTIGUA CALLE AZCUE LOCAL NRO 384-SECTOR CENTRO-MATURIN EDO. MONAGAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31105361-1",
+      "nombre": "DISJOGRECA ORIENTE C.A",
+      "direccion": "AV.RAUL LEONI CC PARCELA NIVEL PISO 1, LOCAL NRO 113,ZONA INDUSTRIAL LOS MONTONES -BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30989744-6",
+      "nombre": "DISNAPOLIS,C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40620689-0",
+      "nombre": "DISTRIBUCIONES ARA C.A",
+      "direccion": "AV.BOLIVAR-LOCAL NRO 47- URB. CARIBE-PUERTO LA CRUZ-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31091197-5",
+      "nombre": "DISTRIBUCIONES FOOD SERVICE ORIENTE,S .A",
+      "direccion": "AV. FUERZAS ARMADAS,C C.INDUSTRIAL BARCELONA,NIVEL 0,LOCAL 11,SECTOR LA ADUANA V- BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40233268-8",
+      "nombre": "DISTRIBUCIONES I.S, C.A",
+      "direccion": "CALLE SUCRE Nro 10-38-BARRIO SUCRE-BARCELONA-EDO. ANZOÀTEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30885687-8",
+      "nombre": "DISTRIBUCIONES ROMHER,C.A",
+      "direccion": "AV.JOSE ANTONIO ANZOATEGUI,C C RIO NEVERI UNICO,LOCAL GALPONES 6 Y 7,SECTOR VIA AEROPUERTO,BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40137512-0",
+      "nombre": "DISTRIBUIDORA ARMARES C.A",
+      "direccion": "CTRA.CLUB DE TIRO BARCELONA,LOCAL GALPÒN Nro S/N,SECTOR POLIGONO DE TIRO BARCELONA-EDO.ANZOÀTEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50501981-3",
+      "nombre": "DISTRIBUIDORA BLU FOODS,C.A",
+      "direccion": "CALLE E ENTRE AV C Y CALLE B, LOCAL NRO B-8-ZONA INDUSTRIAL LOS MONTONES,BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40799935-4",
+      "nombre": "DISTRIBUIDORA CARBOYPRO,C.A",
+      "direccion": "CALLE MEXICO ENTRE LA CALLE SUCRE Y LA CALLE ANDRES ELOY BLANCO,CASA NRO 30-56-BARRIO SUCRE-BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30803531-9",
+      "nombre": "DISTRIBUIDORA CARPER XXI,C.A",
+      "direccion": "CALLE B, QTA. Nº64, URB. TRICENTENARIA, BARCELONA ESTADO ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29966795-1",
+      "nombre": "DISTRIBUIDORA CIANO & GONZALEZ,C.A",
+      "direccion": "AV.PPAL.EDIF.TORRE B,PISO 3, APTO 14, CONJUNTO RESD.ANDRES E. BLANCO,URB.BOYACA II, BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29999417-0",
+      "nombre": "DISTRIBUIDORA COLON ORIENTE,C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40660345-7",
+      "nombre": "DISTRIBUIDORA CONFITODO 04, C.A",
+      "direccion": "AV. A CRUCE CON AV.B LOCAL NRO 02. URB. BOYACA I- BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31423866-3",
+      "nombre": "DISTRIBUIDORA DE ALIMENTOS GABIQUESO, C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-07545552-5",
+      "nombre": "DISTRIBUIDORA DE GALLETAS,C.A",
+      "direccion": "AV. DR.RAMON MONTOYA,C.C DIGA CENTER NIVEL 1,LOCAL 2, SECTOR LA MORITA, TURMERO-EDO.ARAGUA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29393662-4",
+      "nombre": "DISTRIBUIDORA DE LACTEOS MI MADRE Y YO (DIMAYO), C.A.",
+      "direccion": "CALLE LIBERTAD, CASA NRO 54, SECTOR LOS MATAPALOS-PTO. LA CRUZ-EDO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50320928-3",
+      "nombre": "DISTRIBUIDORA DEL ORIENTE, C.A",
+      "direccion": "CTRA. BARCELONA-CARACAS MARGEN DERECHO,C.C.INDUSTRIAL DENOMINADO CENTRO DE ALMACENAMIENTO SANO,GALPON NRO 21-ZONA INDUSTRIAL LOS MESONES-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40602258-6",
+      "nombre": "DISTRIBUIDORA DELGICA, C.A.",
+      "direccion": "CALLE ORIENTE,CASA NRO 2-31,BARRIO EL ESPEJO-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29801517-9",
+      "nombre": "DISTRIBUIDORA DISA II, CA",
+      "direccion": "CTRA.AUTOPISTA RÓMULO BETANCOURT- LOCAL GALPÓN NRO S/N-SECTOR LOS POTOCOS , BARCELONA-EDO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41201557-5",
+      "nombre": "DISTRIBUIDORA DT 2018, C.A.",
+      "direccion": "AV. INTERCOMUNAL,JORGE RODRIGUEZ-C.C.C.E. BATYCA-NIVEL PB-LOCAL 5,SECTOR LAS GARZAS-LECHERIA-EDO. ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40659863-1",
+      "nombre": "DISTRIBUIDORA E INVERSIONES L.D, CA",
+      "direccion": "AV. FERNANDEZ PADILLA,LOCAL S/N,SECTOR CRUZ DE BELEN,CLARINES-EDO. ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50321317-5",
+      "nombre": "DISTRIBUIDORA EL REY ZOZO, CA",
+      "direccion": "CALLE COMERCIO C/C LARA -LOCAL NRO 01-SECTOR PUEBLO NUEVO-ANACO-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29707491-0",
+      "nombre": "DISTRIBUIDORA ERIAL (DISERIALCA) C.A.",
+      "direccion": "AV. PRINCIPAL EDIF. GALPORIENTE,PISO S/N,LOCAL Nro 113-ZONA INDUSTRIAL DE ORIENTE LOS MONTONES-BARCELONA -EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50279314-3",
+      "nombre": "DISTRIBUIDORA F & S ORIENTE,C.A",
+      "direccion": "CALLE ALEJANDRO PETION-LOCAL NRO S/N-ZONA INDUSTRIAL SAN JOSE DE GUANIPA( EL TIGRITO)ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50167277-6",
+      "nombre": "DISTRIBUIDORA FICOSA,C.A.",
+      "direccion": "AV.PEDRO MARIA FREITES-EDIF. FICOSA-PISO PB-LOCAL 14-37-SECTOR CAYAURIMA-BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30316381-5",
+      "nombre": "DISTRIBUIDORA FP, C.A",
+      "direccion": "CALLE CARABOBO, QTA DULCE Nro 10-26-BARRIO CAYAURIMA- BARCELONA -EDO ANZOÀTEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29693692-7",
+      "nombre": "DISTRIBUIDORA GADUCA C.A",
+      "direccion": "CARRETERA NACIONAL BIRUACA ACHAGUAS,EDIF.PARQUE NACIONAL BENEDETTO GAMBINO,PISO PB,OFIC.01-SECTOR SAN JOSE-BIRUACA-EDO. APURE.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31523044-5",
+      "nombre": "DISTRIBUIDORA GOMEZ Y HERNANDEZ C.A",
+      "direccion": "CALLE GUAYAQUIL Nro6-53,SECTOR BARRIO SUCRE,BARCELONA-EDO.ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50528750-8",
+      "nombre": "DISTRIBUIDORA ISHOSU ANZOÁTEGUI, C.A",
+      "direccion": "AV.ENTRE AVENIDA JOSE ANTONIO ANZOÁTEGUI Y LA AV.AEROPUERTO,LOCAL GALPONES INDUSTRIALES NRO S/N-BARRIO 23 DE ENERO-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40017800-2",
+      "nombre": "DISTRIBUIDORA JAVISMARY, C.A",
+      "direccion": "CALLE VARGAS-CASA NRO 18A-SECTOR CHUPARIN ARRIBA-PUERTO LA CRUZ-ESTADO ANZOATEGUI.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-40829030-8",
+      "nombre": "DISTRIBUIDORA JESUS & JEAN, C.A",
+      "direccion": "CALLE LAS FLORES,CASA NRO 055, SECTOR LA ADUANA-BARCELONA EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30522903-1",
+      "nombre": "DISTRIBUIDORA JOCLAMAR, C. A",
+      "direccion": "CALLE MATURIN,NRO 20-101, BARRIO PALOTAL, BARCELONA-ESTADO ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41073621-6",
+      "nombre": "DISTRIBUIDORA LA GRAN COSECHA, C.A.",
+      "direccion": "CALLE TRINIDAD Y PARIS,EDIF.CENTRO GERENCIAL LAS MERCEDES,PISO 4,OF. 43-URBANIZACION LAS MERCEDES,CARACAS-EDO. MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50141997-3",
+      "nombre": "DISTRIBUIDORA LA SELECTA PLC, C.A",
+      "direccion": "AV.MUNICIPAL-LOCAL NRO 189-SECTOR PUERTO LA CRUZ-PUERTO LA CRUZ-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08018871-3",
+      "nombre": "DISTRIBUIDORA MAGIF,C.A",
+      "direccion": "CALLE ¨E ¨ ENTRE Av.C Y CALLE ¨B¨Nro B-8, ZONA INDUSTRIAL LOS MONTONES- BARCELONA- EDO. ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30643703-7",
+      "nombre": "DISTRIBUIDORA NACIONAL 2000, C.A",
+      "direccion": "AV. DANIEL CAMEJO OCTAVIO C.C,CENTRO COMERCIAL PLAZA MAYOR, EDIFICIO 6, NIVEL PISO 2,LOCAL 6 B-245-LECHERIA-EDO. ANZOÀTEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31362810-7",
+      "nombre": "DISTRIBUIDORA ONTEX DE VENEZUELA,C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50414963-2",
+      "nombre": "DISTRIBUIDORA POEMVICA,C.A",
+      "direccion": "AV. PEDRO MARIA FREITES, LOCAL NRO 1 Y 2, BARRIO BUENOS AIRES-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31073616-2",
+      "nombre": "DISTRIBUIDORA RAMOS ARVELO (DISTRASA) S.A",
+      "direccion": "AV.CONSTITUCION LOCAL Nro 35 Y 37,SECTOR PASEO MIRANDA,PUERTO LA CRUZ-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08031178-7",
+      "nombre": "DISTRIBUIDORA RIVAS C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31764670-3",
+      "nombre": "DISTRIBUIDORA SHAM, C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40813183-8",
+      "nombre": "DISTRIBUIDORA SURTIORIENTE, C.A",
+      "direccion": "AVENIDA PRINCIPAL LOS MESONES,LOCAL GALPON NRO 3,SECTOR CONDOMINIO FESAME, BARCELONA-EDO. ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31547356-9",
+      "nombre": "DISTRIBUIDORA UNIMARCA, C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40984442-0",
+      "nombre": "DISTRIBUIDORA XAVIER RG 2017, CA",
+      "direccion": "AV. BARCELONA CARACAS,LOCAL NRO S/N,CENTRO DE ALMACENAMIENTO SANO,OFICINA 1, SECTOR LOS MESONES ,BARCELONA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30908460-7",
+      "nombre": "DISTRIBUIDORA Y BODEGON EL VEGUERO C A",
+      "direccion": "AV.CUMANAGOTO,NRO 25-233-EDIF.DON BOSCO-BARCELONA-EDO. ANZOÀTEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40725462-6",
+      "nombre": "DISTRIBUIDORA Y COMERCIALIZADORA OSES II, C.A",
+      "direccion": "CALLE 16, 4TA ETAPA, MANZANA 10, CASA NRO 21, URB. FUNDACION MENDOZA-BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30930333-3",
+      "nombre": "DISTRIBUIDORA Y SUMINISTROS DE MATERIALES FERRETEROS 2011, C.A.",
+      "direccion": "AV.CUMANAGOTOS, CASA ANA KARINA, NRO 28-6-ZONA CUMANAGOTO",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31264520-2",
+      "nombre": "DONDE PATRICIO, C. A",
+      "direccion": "AV. PRINCIPAL, LOCAL S/N, SECTOR PLAYA CALETA,LECHERIAD EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29960507-7",
+      "nombre": "Distribuidora de Lacteos Ruthrebwill, CA",
+      "direccion": "VEREDA 23, NRO 7,SECTOR 1,LAS CASITAS-BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30747000-3",
+      "nombre": "Distribuidora de Quesos Oriente, CA",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-13136915-4",
+      "nombre": "EDWARD JAVIER CABRERA QUINTANA",
+      "direccion": "AV.OCTAVIO CAMEJO CON CALLE 9-EDIF. LA BAHIA PISO 3-PISO APT.PH 1-CONJUNTO RESIDENCIAL FLAMINGO-LECHERIA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50045015-0",
+      "nombre": "EL CONDIMENTAZO DEL BOULEVARD, C.A.",
+      "direccion": "CALLE BOLIVAR, LOCAL COMERCIAL NRO 5-3-A , SECTOR EL CENTRO-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50012727-8",
+      "nombre": "EL KIT DEL REPUESTO, C.A",
+      "direccion": "AV.CUMANAGOTO-EDIF. RESIDENCIAS CLARET PISO PB-SECTOR BUENOS AIRES-BARCELONA-EDO. ANZOÁTEGUI..",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-31125339-4",
+      "nombre": "EL MARGARITEÑO EMPANADAS, C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41038458-1",
+      "nombre": "EL REY DE LAS ESTOPERAS 2017, C.A",
+      "direccion": "CALLE GUAYAQUIL CON ROSALES,LOCAL NRO3,SECTOR BARRIO SUCRE-BARCELONA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08030773-9",
+      "nombre": "EL TORNILLO FERRETERIA INDUSTRIAL, C. A TOFICA",
+      "direccion": "AV. FUERZAS ARMADAS-LOCAL 1-155-SECTOR LA ADUANA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40442887-9",
+      "nombre": "ELECTRIPARTES INFRAROJO, C.A.",
+      "direccion": "CARRERA 18 ENTRE CALLES 48 Y 49,EDIF.DEITOS,PISO 1, OF. 10,SECTOR CENTRO-BARQUISIMETO-EDO. LARA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50223742-9",
+      "nombre": "ELITE 3000 ORIENTE, C.A",
+      "direccion": "AV.CARACAS-CC VIDEMAR-PB LOCALES 5,6,7 Y 8-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50229652-2",
+      "nombre": "EMBUTIDOS LAS 3M, C.A",
+      "direccion": "CALLE RICAURTE, CASA NRO 224, BARRIO MARIÑO, PUERTO LA CRUZ-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50510702-0",
+      "nombre": "EMBUTIDOS LUGO, C.A",
+      "direccion": "CARRETERA BARCELONA-CARACAS, LOCAL GALPON 09,CENTRO DE ALMACENAMIENTO SANO-ZONA INDUSTRIAL MESONES, BARCELONA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50695928-3",
+      "nombre": "EMPREDIMIENTO ALEXANDER MATHISON",
+      "direccion": "CALLE BOLIVAR, CASA NRO 6, SECTOR LA PICHA, GUANTA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50544433-6",
+      "nombre": "EMPRENDIMIENTO ADRIANA RIOS 2",
+      "direccion": "CALLE SAN CARLOS, CASA S/N -SECTOR PALOTAL- BARCELONA-ESTADO ANZÓATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50355840-7",
+      "nombre": "EMPRENDIMIENTO PEDRO BELLORIN",
+      "direccion": "CALLE FUNDACION, CASA NRO.21, URB. CAICARA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31076055-1",
+      "nombre": "EMPRESAS EL MORRO, C. A",
+      "direccion": "AV E CON CALLE 4-ZONA IND.LOS MONTONES-PARCELAS 17 A LA 19-BARCELONA EDO. ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29384470-3",
+      "nombre": "EMPRESAS EURO EXPRESS,C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08000007-2",
+      "nombre": "ENVASES VENEZUELA,C.A",
+      "direccion": "AV.BOLIVAR,NRO 322, PB,SECTOR BELLA VISTA,PUERTO LA CRUZ",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41094481-1",
+      "nombre": "ESPACIO CACAO, C.A.",
+      "direccion": "CALLE SAN MARTIN, CASA NRO. 2, SECTOR BARRIO SUCRE, BARCELONA, EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31419613-8",
+      "nombre": "EXTINTORES HERNANDEZ ZUNIAGA,C.A",
+      "direccion": "CALLE PRINCIPAL SECTOR ISLA DE CUBA, Nro 13 A 200 MTS. DEL CUERPO DE BOMBEROS,PUERTO LA CRUZ,EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50514722-6",
+      "nombre": "F&S DISTRIBUCION., C.A",
+      "direccion": "CALLE TRANSVERSAL NRO 2, LOCAL NRO GALPON 7 Y 8, ZONA INDUSTRIAL LOS PINOS-PARCELA NRO 8-MANZANA 12, CIUDAD GUAYANA-EDO. BOLIVAR.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08004632-3",
+      "nombre": "FARMACIA LA BOTICA C A",
+      "direccion": "AV. CONTRY CLUB C/C SAN CARLOS,QTA ISAURA-URB. URDANETA-BARCELONA EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30245541-3",
+      "nombre": "FARMACIA MEDITOTAL ,C .A",
+      "direccion": "AV.INTERCOMUNAL JORGE RODRIGUEZ,CLINICA MEDITOTAL,NRO PB,SECTOR LAS GARZAS SUCURSAL CASA FUERTE.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40051888-1",
+      "nombre": "FARMACIA SUPER TODO II, C.A.",
+      "direccion": "AV.CARACAS-CRUCE CON CALLE MONAGAS-EDIF.MARTINS-PISO PB-LOCAL S/N-SECTOR CLINICA ZAMBRANO-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50307380-2",
+      "nombre": "FARMACIA VIRGEN DE LOURDES III MR, C.A",
+      "direccion": "AV. CARACAS, C C VIDEMAR, PB LOCAL 2, SECTOR CASCO CENTRAL, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-07000750-8",
+      "nombre": "FARMACIAS UNIDAS, S.A.",
+      "direccion": "CALLE 85-NO.4-104, EDIF. COBECA, PISO 2, PLANRA ALTA, SECTOR AV. FALCON, MARACAIBO-EDO.ZULIA-SUCURSAL NUEVA BOTICA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00020200-1",
+      "nombre": "FARMATODO, C.A.",
+      "direccion": "AV.LOS GUAYABITOS,CC EXPRESO BARUTA,NIVEL 5, OF UNICA,URB. LA TRINIDAD(SECTOR PIEDRA AZUL) CARACAS.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-40445913-8",
+      "nombre": "FENIX SPORT, C. A",
+      "direccion": "AV. JUAN DE URPIN, C.E.UNIFORMES MIRANDA,PISO 1,OFIC.1, BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50147712-4",
+      "nombre": "FERRE KSA INTERCOMUNAL, C.A.",
+      "direccion": "AV.JORGE RODRIGUEZ-LOCAL CERRO SUR-NRO 5-SECTOR LAS GARZAS-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50039768-2",
+      "nombre": "FERRE KSA. C.A.",
+      "direccion": "AV.LIC.DIEGO BAUTISTA URBANEJA-QTA.VILLA SILVIA-NO K-38-LECHERIA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31513818-2",
+      "nombre": "FERRE SOLAR,C.A",
+      "direccion": "AV.INTERCOMUNAL-LOCAL NRO 510-SECTOR SIERA MAESTRA-PUERTO LA CRUZ.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29490605-2",
+      "nombre": "FERREAGRO CRISTO DE JOSE C A",
+      "direccion": "AV. RAUL LEONI,LOCAL NRO S-2B-SECTOR ZONA INDUSTRIAL LOS MONTONES",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40382090-2",
+      "nombre": "FERREHIERROS CAYAURIMA,C.A",
+      "direccion": "AV. CAYAURIMA-SECTOR CAYAURIMA-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31403310-7",
+      "nombre": "FERREMAC SARAH, C A",
+      "direccion": "AV.PEDRO MARIA FREITES CRUCE CON CALLE BOLIVAR-LOCAL NRO 1-SECTOR CAYAURIMA-BARCELONA-ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41207942-5",
+      "nombre": "FERREMARKET JR, C.A.",
+      "direccion": "AV.MUNICIPAL-LOCAL NRO 1-SECTOR CASCO CENTRAL-PUERTO LA CRUZ-EDO.ANZÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00271144-2",
+      "nombre": "FERRETERIA EPA,C.A",
+      "direccion": "AV.USLAR C/C MICHELENA-NRO 8972-URB.MICHELENA-VALENCIA-EDO. CARABOBO.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-40814779-3",
+      "nombre": "FERRETERIA INDUSTRIAL LOS CUMANAGOTOS C.A.",
+      "direccion": "AV.CUMANAGOTOS,CASA ANA KARINA,NRO 28-C, BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31543291-9",
+      "nombre": "FERRETERIA WALTER, C. A",
+      "direccion": "AV. PEDRO MARIA FREITES-LOCAL NRO S/N-SECTOR CAYAURIMA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31413192-3",
+      "nombre": "FERRETERIA Y MATERIALES DE CONSTRUCCION SAN JORGE C A",
+      "direccion": "AVENIDA MIRANDA,SECTOR CENTRAL EDIFICIO GARBO L-3, BARCELONA ESTADO ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40736540-1",
+      "nombre": "FERRETODO JM,C.A",
+      "direccion": "AV. NICOLAS ROLANDO,LOCAL 4-183-SECTOR LA ADUANA-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50083135-8",
+      "nombre": "FERRETODO, C.A",
+      "direccion": "AV.MUNICIPAL-CC MARIO SANCHEZ-LOCALNROM-5-SECTOR PUEBLO NUEVO-PUERTO LA CRUZ-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29728734-5",
+      "nombre": "FRENOS LUSOVEN, C. A",
+      "direccion": "AVENIDA PEDRO MARIA FREITES,EDIF.BUENOS AIRES,PISO PB-LOCAL ,PB-05-SECTOR BUENOS AIRES-BARCELO,EDO. ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29838981-8",
+      "nombre": "FRENOS TRUCK´S M & M, C.A",
+      "direccion": "AV. ARGIMIRO GABALDON,CRUCE CON CALLE SUCRE,LOCAL NRO S/N-SECTOR BARRIO SUCRE,BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41164427-7",
+      "nombre": "FRESCO MERCADO, C.A.",
+      "direccion": "AV.NORTE SUR 1, LOCAL NRO 3,URB.VILLA MERÚ-PUERTO ORDAZ,ESTADO BOLIVAR.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41318995-0",
+      "nombre": "FRIGORIFICO EL RUBITH,C.A",
+      "direccion": "AV. EL EJERCITO LOCAL EL DORADO-NRO 6-URB.NUEVA BARCELONA-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40711753-0",
+      "nombre": "FRIGORIFICO RONGRAT,C.A",
+      "direccion": "AV.PEDRO MARIA FREITES,CASA NRO S/N. URB CAMINO NUEVO-BARCELONA -EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50340111-7",
+      "nombre": "FULL LIMPIEZA JYM, C.A",
+      "direccion": "AV. CARACAS, EDIF. EL CARDON, PISO PB, LOCAL 02, SECTOR CENTRO BARCELONA- EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40621350-0",
+      "nombre": "GENERAL SERVICES GONZALEZ S,C.A",
+      "direccion": "AV. JUAN DE URPIN,CASA NRO 22-44,SECTOR EL ESPEJO-BARCELONA-ESTADO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40771742-1",
+      "nombre": "GOMAS REPUESTOS Y SERVICIOS ORIENTE, C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41072638-5",
+      "nombre": "GOYO`S, C.A.",
+      "direccion": "CR. NACIONAL SAN JUAN, LOCAL CENTRO DE ALMACENAMIENTO EMPRESARIAL JGC, NRO 7, SECTOR LAS BARRANCAS SAN JUAN DE BAUTISTA, NUEVA ESPARTA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00336514-9",
+      "nombre": "GRAFICAS PAPELERA LA IDENTIDAD CA",
+      "direccion": "MOLINO A RANCHO GRANDE,NRO 07,LA PASTORA-CARACAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41220985-0",
+      "nombre": "GREINCOR FOODS, C.A.",
+      "direccion": "AV.ROMULO GALLEGOS,CC PARQUE COMERCIAL PASEO REAL-NIVEL C-LOCAL 12-SECTOR NUEVA BARCELONA-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50124523-1",
+      "nombre": "GRUPO 7-A,C.A",
+      "direccion": "CALLE 9, LOCAL NRO 9, SECTOR COLINAS DEL NEVERI-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50793468-3",
+      "nombre": "GRUPO BODEGUITA ORIENTE,C.A",
+      "direccion": "AV.GUZMÁN LANDER,LOCAL NRO S/N,SECTOR COLINAS DEL NEVERI-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29899963-2",
+      "nombre": "GRUPO HERMANOS MARCANO C.A",
+      "direccion": "AV. FUERZAS ARMADAS,GALPON Nro 13,CENTRO INDUSTRIAL BARCELONA,SECTOR BARRIO LA ADUANA-BARCELONA-EDO.ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50594741-9",
+      "nombre": "GRUPO MANGO BAJITO, C.A",
+      "direccion": "AV.SAN JOSE TARBES-EDIF.TORRE BOD-PISO NO INDICA-OF.J-05-ZONA PRINCIPAL VALENCIA-EDO.CARABOBO.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40717977-2",
+      "nombre": "GRUPO MG ORIENTE, C.A.",
+      "direccion": "AV. CUMANAGOTOS,EDIF.PATROLA BELLA,PISO PB LOCAL 1-4,BARCELONA EDO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50414040-6",
+      "nombre": "GRUPO PAPEL D&J,C.A",
+      "direccion": "CALLE SAN CARLOS DISTINGUIDA,LOCAL NRO.183,URB. URDANETA,CARRERA 26,BLOQUE 19-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40355003-4",
+      "nombre": "GRUPO PUNTO COM, C.A",
+      "direccion": "AV.MUNICIPAL,LOCAL AMERICA,MEZANINA OF 5-SECTOR BELLA VISTA-PUERTO LA CRUZ-EDO.ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50616420-5",
+      "nombre": "GRUPO SIGMA 2024, C.A",
+      "direccion": "AV. ROMULO GALLEGOS, LOCAL S/N, SECTOR SAN MIGUEL, VALLE LA PASCUA-EDO. GUARICO.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31150187-8",
+      "nombre": "GRUPO TOTAL 99, C.A.",
+      "direccion": "CALLE LAS VEGAS CON SOLEDAD-EDIF.CLARIANT VENEZUELA-LOCALES SOTANO Y PB-ZONA INDUSTRIAL LA TRINIDAD-BARUTA-EDO. MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41315128-6",
+      "nombre": "GRUPO ULTRA LED, C.A.",
+      "direccion": "AV.INTERCOMUNAL JORGE RODRIGUEZ-EDIF J.GASPARD-PISO PB-LOCAL 1 Y 2-SECTOR LAS GARZAS-LECHERIAS-ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40780179-1",
+      "nombre": "GRUPO VASCONCELOS, C.A.",
+      "direccion": "AV.PASEO COLÓN ENTRE CALLE ESPERANZA CON MIRAMAR,LOCAL S/N,SECTOR EL PARAISO-PUERTO LA CRUZ,ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-24231120-1",
+      "nombre": "GUSTAVO CAMARGO FLORIAN",
+      "direccion": "AV. BOULEVAR 5 DE JULIO, EDIF. RENOJ, PISO 1, SECTOR CASCO CENTRAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "E-83630177-6",
+      "nombre": "HAIQING WU",
+      "direccion": "AV. PEDRO MARIA FREITES CON CALLE PAEZ-LOCAL S/N -SECTOR CAYAURIMA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-08638628-0",
+      "nombre": "HAROLD ANTONIO RUIZ NUÑEZ",
+      "direccion": "AV. RAUL LEONI-RES.PUERTO MAR-PISO 3-GUANTA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-26971511-8",
+      "nombre": "HECDIMAR DEL VALLE FLORES REGNAULT",
+      "direccion": "AV.CUMANAGOTO-CASA NRO 5-URB. VILLAS ARAUCA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30193616-7",
+      "nombre": "HERRERA,C.A",
+      "direccion": "AV. PASEO SIMON BOLIVAR, EDIFICIO HERRERA, PISO P.B., LOCAL 1 URB. MARHUANTA NORTE, PARROQUIA MARHUANTA, MUNICIPIO HERES, CIUDAD BOLIVAR, EDO.BOLIVAR",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30414892-5",
+      "nombre": "HIERRO CODOCA, C.A",
+      "direccion": "CALLE ANDRES ELOY BLANCO,NRO 15-9,BARRIO SUCRE,BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30905845-2",
+      "nombre": "IMPRESOS Y PUBLICIDAD SUGELYN C A (SUGELYN C.A)",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29872240-1",
+      "nombre": "INDUSTRIA AGRO FORESTAL SAN ISIDRO C.A",
+      "direccion": "CTRA.PASO REAL EL CEDAMO,CASA Nro S/N,SECTOR SAN ISIDRO,CLARINES-EDO.ANZOÀTEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30308547-4",
+      "nombre": "INDUSTRIAS ALIMENTICIAS HERMO DE VENEZUELA, S.A",
+      "direccion": "AV. PRINCIPAL DEL BOSQUE, EDIF.CREDICARD, PISO 10, OF 101, URB. EL BOSQUE-CARACAS(CHACAO)MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40158380-6",
+      "nombre": "INSIDE MARKET, SUPERMERCADO RIO, C.A",
+      "direccion": "AV. JUAN BAUTISTA ARISMENDI C.E. PLAZAS DEL SOL(ETAPA I) LOCALES L5, L6, L7,L8 Y D1 MACHO MUERTO VILLAROSA-ESTADO NUEVA ESPARTA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50076930-0",
+      "nombre": "INVERSIONES BARCELONA ORIENTE 20.21, C.A",
+      "direccion": "CALLE PRINCIPAL-LOCAL NRO 01-ZONA LECHERIA-LECHERIAS-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50070569-7",
+      "nombre": "INVERSIONES BELLA CHINA LH, C.A.",
+      "direccion": "AV. LICENCIADO DIEGO BAUTISTA URBANEJA, QTA. LA NENA, URB. PALMERA, LECHERIAS-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29509020-0",
+      "nombre": "INVERSIONES BOULEVARD 5 DE JULIO CA",
+      "direccion": "BOULEVAR 5 DE JULIO, NRO 14-57, BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31674301-2",
+      "nombre": "INVERSIONES CAR-GO, C.A.",
+      "direccion": "CALLE RICAURTE,CASA VILLA Nro 4A, URB.VILLA TERRACOTA 1, BARCELONA-EDO. ANZOÀTEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31350793-8",
+      "nombre": "INVERSIONES CARDS CLUB MARGARITA,C.A",
+      "direccion": "CALLE MANEIRO, C C. PASEO GUARAGUAO,PB LOCAL 14, PORLAMAR-ESTADO NUEVA ESPARTA-VENEZUELA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41316893-6",
+      "nombre": "INVERSIONES CARRERO 2026, C.A",
+      "direccion": "AV. RIO NEVERI, LOCAL NRO 3, URB.NUEVA BNA, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40442604-3",
+      "nombre": "INVERSIONES CONAIZEN, C.A.",
+      "direccion": "AV. SAN SEBASTIAN, C C BARUTA, NIVEL NA, LOCAL 4, URBANIZACIÓN CHARALLAVITO-CARACAS-MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31719254-0",
+      "nombre": "INVERSIONES COSTA NOVA, C.A.",
+      "direccion": "CALLE BOLIVAR, CRUCE CALLE EL ROBLE-LOCAL S/NRO-SECTOR CASCO CENTRAL-VALLE DE GUANAPE-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29850362-9",
+      "nombre": "INVERSIONES GLOBAL FOOD,C.A",
+      "direccion": "CALLE SAN ANTONIO,LOCAL DEPOSITOS SAN ANTONIO,NRO 7,URB. CENTRO SAN ANTONIO, VILLA ROSA,NUEVA ESPARTA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50541065-2",
+      "nombre": "INVERSIONES GOMEZ GARCIA 2023, C.A",
+      "direccion": "AV. MIRANDA,CRUCE CON CALLE MATURIN,LOCAL A, PLANTA BAJA, NRO 5-52, SECTOR BARCELONA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40485262-0",
+      "nombre": "INVERSIONES LA TALANQUERA III, C.A",
+      "direccion": "AV.MARTIN TRAVIESO-LOCAL NRO 2-CASA 1578 -SECTOR CAMPO A-2-PARROQUIA SECCIÓN CAPITAL ANGOSTURA-MCPIO BOLIVARIANO ANGOSTURA-CIUDAD PIAR-EDO. BOLIVAR.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29856853-4",
+      "nombre": "INVERSIONES LOS CUMANAGOTOS 2010,C.A",
+      "direccion": "AV. CUMANAGOTO, C / CALLE ANDRES ELOY BLANCO,EDIF. PATROLLA BELLA-PISO PB-LOCAL 01SECT- NUEVA BARCELONA,BARCELONA ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30142919-2",
+      "nombre": "INVERSIONES MACK, C. A",
+      "direccion": "AV.ARGIMIRO GABALDON CC VIA ALTERNA-NIVEL 1-LOCAL 1-2 Y 3-SECTOR EL RETORNO DE BARRIO SUCRE-BARCELONA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50200883-7",
+      "nombre": "INVERSIONES MAR K-RIBE, C.A",
+      "direccion": "CALLE SAN CARLOS,LOCAL GALPÓN NRO S/N , SECTOR LA ADUANA -BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50299595-1",
+      "nombre": "INVERSIONES MARQUELECTRIC, C.A",
+      "direccion": "CALLE GUILLERMO JOSÉ SCHAEL Y ESQUINA URAPEL,EDIF.NAURALY,PISO B, APTO.2 . URB.LA CANDELARIA-CARACAS-DISTRITO CAPITAL.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41313853-0",
+      "nombre": "INVERSIONES ORIENTE 20.20, C.A",
+      "direccion": "AV. PRINCIPAL DE LECHERIA, EDIF. RIBADEO, PISO 4, LOCAL P4-1-SECTOR PRICIPAL DE LECHERIA-LECHERIAS-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30459533-6",
+      "nombre": "INVERSIONES POPOLIS I.P., C.A.",
+      "direccion": "AV. LIBERTADOR CON CALLE SORORCAIMA EDIFICA  PISO 5 -URB. EL ROSAL MUNICIPIO CHACAO EDO. MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41199008-6",
+      "nombre": "INVERSIONES RIKO MARKET, C.A.",
+      "direccion": "AV. PRINCIPAL CON CALLE PAMPATAR,LOCAL MINI CENTRO COMERCIAL PAMPATAR, NRO PB-1,SECTOR VENEZUELA,LECHERIA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40498502-6",
+      "nombre": "INVERSIONES TODO HIERRO AGG, C.A",
+      "direccion": "AV. RAUL LEONI, LOCAL DIAGONAL A AGRO PATRI,  S/N, ZONA INDUSTRIAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40047262-8",
+      "nombre": "INVERSIONES VENTUARI 2012,CA",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40262738-6",
+      "nombre": "INVERSIONES Y DISTRIBUCIONES DELTA SUR, C.A",
+      "direccion": "AV.ROMULO BETANCOURT,LOCAL CENTRO DE ALMACENAMIENTO SANO-NRO 19-SECTOR MESONES-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29927641-3",
+      "nombre": "INVERSIONES Y SERVICIOS LA CASA DE LA CHIRIPA C A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50029960-5",
+      "nombre": "ISOLA FOODS ANZOATEGUI, C.A.",
+      "direccion": "CALLE EL BUEN PASTOR,EDIF. CENTRO ELCA,PISO MEZZANINNA-OF 1, SECTOR BOLEITA NORTE,CARACAS,MIRANDA.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-41280899-0",
+      "nombre": "ITC COMERCIAL,C.A",
+      "direccion": "CALLE PRINCIPAL COMUNIDAD SABANETA ALTA,LOCAL GALPON NRO S/N,CASERIO TAPA DE PIEDRA,SECTOR MONTAÑUELA-SABANETA-ARAURE-EDO. PORTUGUESA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30583726-0",
+      "nombre": "J.J SUMINISTROS, C.A",
+      "direccion": "CAMPO A-1 DE LA FERROMINERA,CALLE CABUDARE,CASA Nro 4,PTO ORDAZ-EDO.BOLIVAR.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40544618-8",
+      "nombre": "JAQUE Y ALGO MAS, C.A",
+      "direccion": "CALLE SAN FRANCISCO,CASA NRO 2., SECTOR LA CARAQUEÑA,POZUELOS.PUERTO LA CRUZ-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-05910679-8",
+      "nombre": "JESUS CARMELO BRAVO MATA",
+      "direccion": "AV.COSTANERA-EDIF.ZEUS,PISO 2, APTO Z-2-4-CONJ. RESIDENCIAL ATHENAS-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-12040697-0",
+      "nombre": "JOSE LUIS DA SILVA GIL",
+      "direccion": "AV. CUMANAGOTO, QUINTA LA NEGRA, NRO 25, CONJUNTO RESIDENCIAL PASEO CUMANAGOTO, BARCELONA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-07133249-3",
+      "nombre": "JUAN CARLOS MONASTERIO GUEDEZ",
+      "direccion": "CALLE FREITES SECTOR PORTUGAL,GALPON 2-31-PLAZA SAN FELIPE,BARCELONA-EDO.ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29983791-1",
+      "nombre": "KD PARIS CHOCOLATIER C A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30578453-1",
+      "nombre": "KEMCO, C. A",
+      "direccion": "AV.GUZMAN LANDER OESTE, EDIFICIO KEMCO-BARCELONA -EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-12475388-7",
+      "nombre": "KEREN JOHANA GARRIDO CAMACHO",
+      "direccion": "CALLE DEMOCRACIA, EDIF. HABIBE II, PISO 8, APTO.8-6, PUERTO LA CRUZ-EDO.ANZÓATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08025603-4",
+      "nombre": "LA CASA DE LA CAÑA C.A",
+      "direccion": "AV. VIA ALTERNA CRUCE CON CALLEJON URDANETA,LOCAL CASA DE LA CAÑA NROS S/N,SECTOR CAMPO CLARO-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31237187-0",
+      "nombre": "LA CASA DEL INYECTOR SUCRE, C. A",
+      "direccion": "CALLE SUCRE, CASA NRO 12-9 A 50 METROS DE LA VIA ALTERNA-SECTOR BARRIO SUCRE-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00114349-1",
+      "nombre": "LA MONTSERRATINA, C.A.",
+      "direccion": "AV. ANDRES BELLO, LOCAL NRO 38-40-42, ZONA INDUSTRIAL LAS TEJERIAS, ESTADO ARAGUA.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-31233299-9",
+      "nombre": "LACTEOS EL GUARIQUEÑO,C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29958058-9",
+      "nombre": "LAR FERRETERO CA",
+      "direccion": "AV. RIO-QTA AVE MARIA-NRO16-1-SECTOR COLINAS DEL NEVERI-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31330493-0",
+      "nombre": "LIBRERÍA Y PAPELERIA BEST SELLER,C.A",
+      "direccion": "AVENIDA 5 DE JULIO,LOCAL NRO 1,SECTOR CENTRO-BARCELONA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-13766017-9",
+      "nombre": "LINYURIS DEL VALLE JIMENEZ",
+      "direccion": "CALLE 3RA,CASA NRO.49 ,BARRIO EL CARDONAL,BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V163226738",
+      "nombre": "LISBETH MARBELLA ACOSTA GUTIERREZ",
+      "direccion": "CALLE SUCRE, LOCAL 15A, LOCAL 2, BARRIO SUCRE, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41026886-7",
+      "nombre": "LO MEJOR DEL BRASERO C.A",
+      "direccion": "AV. MUNICIPAL, CRUCE CON CALLE SUCRE-SECTOR EL PENSIL-PUERTO LA CRUZ-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40512145-9",
+      "nombre": "LPG DISTRIBUCIONES, C.A",
+      "direccion": "CALLE PRIMERO DE MAYO, LOCAL NRO 052, SECTOR PUENTE AYALA, BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40274711-0",
+      "nombre": "LUBRI YA 2018,C.A",
+      "direccion": "AV. URDANETA ( HOY CONTRY CLUB) LOCAL NRO 01-A-URB.URDANETA-BARCELONA -EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31618034-4",
+      "nombre": "LUBRI-CARS APURE,C.A",
+      "direccion": "AV. FUERZAS ARMADAS-EDIF. MARIMBA-PISO PB-LOCAL 3-SECTOR LA ADUANA-BARCELONA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29385705-8",
+      "nombre": "LUBRICANTES NEVERI, C.A.",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30464968-1",
+      "nombre": "LUMALAC DAIRY PRODUCTS, LUMALAC, C.A.",
+      "direccion": "URB.LOMAS DE CHUAO,CALLE LA GLORIETA,QUINTA L & M,CARACAS 1061-VENEZUELA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00319235-0",
+      "nombre": "MAKRO COMERCIALIZADORA, S.A",
+      "direccion": "AV.R. GALLEGOS,C/C VIE.PETARE GUARENAS,EDIF. TIENDA LA URBINA P. 1, LA URBINA 1070,EDO. MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30584255-8",
+      "nombre": "MAYOR DE ALIMENTOS BENFICA C A",
+      "direccion": "AV. FUERZAS ARMADAS LOCAL CENTRO EMPRESARIAL BARCELONA, Nro 5, BARRIO LA ADUANA-BARCELONA-EDO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31646300-1",
+      "nombre": "MEGA REPUESTOS CARIBE 88, C.A",
+      "direccion": "AV.MUNICIPAL ENTRE CALLE SUCRE Y BUENOS AIRES-EDIFICIO IBERIA-PLANTA BAJA-PISO P.B LOCAL NRO115-SECTOR CENTRO-PUERTO LA CRUZ-ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "E-82289322-0",
+      "nombre": "MENGXIAN FENG",
+      "direccion": "AV CARACAS-CRUCE CON CALLE MONAGAS-CASA NRO 17-27-SECTOR CASCO CENTRAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31052496-3",
+      "nombre": "MERCADISA BARCELONA,C.A",
+      "direccion": "AV. JOSE ANTONIO ANZOATEGUI, C.C. AEROPUERTO, NIVEL 1, LOCAL GALPON 7, SECTOR AEROPUERTO, BARCELONA ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50398581-0",
+      "nombre": "MINI ABASTO LUNA 2023, C.A",
+      "direccion": "AV. PEDRO MARIA FREITES-LOCAL NRO 1-SECTOR CAYAURIMA-BARCELONA-ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00025543-1",
+      "nombre": "MOLINOS NACIONALES, C. A (MONACA)",
+      "direccion": "",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-30857716-2",
+      "nombre": "MULTI MANGUERAS,C.A",
+      "direccion": "CALLE SUCRE-LOCAL NRO. 7-64-SECTOR BARRIO SUCRE-BNA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40593708-4",
+      "nombre": "MULTI RAYMOND HOGAR C.A",
+      "direccion": "AV. FUERZAS ARMADAS-LOCAL NRO 17-67 SECTOR CASCO CENTRAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30302002-0",
+      "nombre": "MULTICOLOR J.R, C .A",
+      "direccion": "AV.PEDRO MARIA FREITES,C/C CALLE EULALIA BUROZ,EDIF.DON JESUS,PLANTA BAJA-BARCELONA-EDO. ANZOTEGUI.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-40714001-9",
+      "nombre": "MULTINVERSIONES LUBRIORIENTE (LUBROR), C.A",
+      "direccion": "AV.PEDRO MARIA FREITES-LOCAL NRO 19-A-URB.DENNIS BALZA-BARCELONA EDO. ANZOÁTEGUI.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-50117846-1",
+      "nombre": "MULTIREPUESTOS ORENSE, C.A",
+      "direccion": "AV PPAL,LOCAL NRO 03-BARRIO SUCRE-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50260764-1",
+      "nombre": "MUNDO FACTORY MONAGAS 2022,C.A",
+      "direccion": "AV. LA PAZ-CASA NRO 18-SECTOR LAS AVENIDAS-MATURIN-ESTADO MONAGAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29832406-6",
+      "nombre": "MUNDO MANGUERAS JM, C.A",
+      "direccion": "AV. PEDRO MARIA FREITES 15-113 SECTOR CAYAURIMA-BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41255132-9",
+      "nombre": "NEUMATICOS D´AUTOS & STORE 4X4, CA",
+      "direccion": "AV.5 DE JULIO CON CALLE 34 LA MORAERA,LOCAL PB-NRO 2-URB.NUEVA BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50027616-8",
+      "nombre": "NOTHING IMPORTS, C.A",
+      "direccion": "AV. INTERCOMUNAL JORGE RODRIGUEZ,LOCAL GALPON NRO 3,LAS GARZAS-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-50841113-7",
+      "nombre": "NU3S, C.A.",
+      "direccion": "CARRETERA CLUB POLIGONO DE TIRO-LOCAL GALPÓN S/N, ZONA POLIGONO DE TIRO-BARCELONA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00012926-6",
+      "nombre": "Nestle  Venezuela, S.A",
+      "direccion": "CALLE ALTAGRACIA-EDIF. P y G ,PISO 3,OF.RECEPCION URB.SOROKAIMA,SECTOR LA TRINIDAD,CARACAS.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-50217774-4",
+      "nombre": "OCÉANO PACIFICO ALIMENTOS,C.A",
+      "direccion": "AV.JORGE RODRIGUEZ, SECTOR LAS GARZAS, GALPON NRO 2, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29470912-5",
+      "nombre": "OF BARCELONA,C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41247976-8",
+      "nombre": "ONCE ONCE ORIENTE C.A.",
+      "direccion": "AV.EL EJERCITO,C .C. CENTRO EMPRESARIAL TERRAZAS DE PUENTE REAL,NIVEL P.B. LOCAL 1 Y 2, SECTOR NUEVA BARCELONA,EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31758418-0",
+      "nombre": "OPERADORA LECHERIA 2011, C.A",
+      "direccion": "VDA DIEGO BAUTISTA, CASA NRO S/N, ZONA LECHERIA-LECHERIAS, EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50621552-7",
+      "nombre": "OSKLA MARKET, C.A",
+      "direccion": "AV. PASEO CUMANAGOTO,QTA S/N , NRO 37, URB.LOS CUMANAGOTO-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00028027-4",
+      "nombre": "PANDOCK C. A",
+      "direccion": "AV.ROMULO GALLEGOS,EDIF.PANDOCK,PISO P.B.LOCAL 26,SECTOR MONTECRISTO(ENTRE LOS DOS CAMINOS Y BOLEITA)CARACAS,MIRANDA.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-29997266-5",
+      "nombre": "PAOLA`S PIZZA,C.A",
+      "direccion": "AV. JORGE RODRIGUEZ,C.C.LAS GARZAS,NIVEL PB,LOCAL L,SECTOR LAS GARZAS.LECHERIA,EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08007268-5",
+      "nombre": "PAPELERIA MAYOR,C.A",
+      "direccion": "AVENIDA JORGE RODRIGUEZ,CC.FIMICENTRO,LOCAL 05-NIVEL PB-SECTOR LAS GARZAS-LECHERIA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31755962-2",
+      "nombre": "PAPELERIA MULTI-WIN,C.A",
+      "direccion": "AV. CARACAS, LOCAL NRO 7-74,SECTOR CENTRO,BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30602978-8",
+      "nombre": "PAPELERIA ORIENTE 5 DE JULIO,  C. A",
+      "direccion": "AV. 5 DE JULIO C/C SIMON RODRIGUEZ,EDIF. CHAMARIAPA-PUERTO LA CRUZ-ANZOATEGUI / SUCURSAL BARCELONA-AV. MIRANDA,EDIF. RADIO BARCELONA PB-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08004177-1",
+      "nombre": "PAPELERIA ORIENTE BARCELONA C A",
+      "direccion": "AVENIDA MIRANDA, EDIFICIO RADIO BARCELONA, PB URBANIZACION PALOTAL",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-04716945-0",
+      "nombre": "PEDRO JOSE CAMACHO",
+      "direccion": "CALLE BOLIVAR. EDIF.PÉREZ MÁRQUEZ,PISO MEZZANINA, LOCAL 6, PUERTO LA CRUZ-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00033800-0",
+      "nombre": "PEPSICO ALIMENTOS, S.C.A.",
+      "direccion": "CALLE 2da TRANS. CRUCE C/C HANS NEUMANS, EDIF. FUNDACION POLAR, PISO 3, OFIC. 4, URB. LOS CORTIJOS DE LOURDES, Z.P. 1070- CARACAS",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31297873-2",
+      "nombre": "PERROCKEROS BURGUER S, C. A",
+      "direccion": "AV.RIO, CASA NRO 24, SECTOR COLINAS DEL NEVERI, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50333012-0",
+      "nombre": "PHARMA LUPITA BARCELONA, C.A",
+      "direccion": "AV. CARACAS, EDIF. MINI CENTRO LENI, PISO PB, LOCAL NRO 05, SECTOR CENTRO BACELONA- EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29721359-7",
+      "nombre": "PLAS BEKA, C.A",
+      "direccion": "AV.ALIRIO UGARTE PELAYO-LOCAL COMPLEJO INDUSTRIALTECNOACERO-NRO 31-13-SECTOR BAJO GUARAPICHE MATURIN-EDO MONAGAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-297213597",
+      "nombre": "PLAS BEKA, C.A",
+      "direccion": "AV.ALIRIO UGARTE PELAYO-LOCAL COMPLEJO INDUSTRIALTECNOACERO-NRO 31-13-SECTOR BAJO GUARAPICHE MATURIN-EDO MONAGAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29805501-4",
+      "nombre": "PLASTICO Y PAPEL 69 (PLASTIPAPEL 69) C .A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40771744-8",
+      "nombre": "PLASTICOS Y ENVASES SOTILLO, C.A",
+      "direccion": "CALLE SUCRE-LOCAL NRO 8-66-A-SECTOR BARRIO SUCRE-BARCELONA -EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00233686-2",
+      "nombre": "PLUMROSE CARACAS,C.A",
+      "direccion": "AV. PROLONGACIÒN AV.TRIESTE C/C MIRANDA EDIF.PLUMROSE PISO 1, OF ADMINISTRATIVA,URB.LOS RUICES SUR APARTADO 3941 Y 2917 CARACAS-DISTRITO CAPITAL.",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-00019361-4",
+      "nombre": "PLUMROSE LATINOAMERICANA,C.A",
+      "direccion": "AV. PROLONGACIÒN AV.TRIESTE C/C MIRANDA EDIF.PLUMROSE PISO 2, OF ADMINISTRATIVA,URB.LOS RUICES SUR- CARACAS-DISTRITO CAPITAL.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-50225240-1",
+      "nombre": "POLLOS & PIZZAS HOT 2022, C.A",
+      "direccion": "AV.CARACAS , LOCAL NRO S/N, SECTOR CASCO CENTRAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08505914-8",
+      "nombre": "PRECA,S.A",
+      "direccion": "AV.FERROCARRIL C/ CARR 3, EDIF. PROSIDER, PISO 0, OFIC S/N,ZONA INDUSTRIAL COMDIBAR I, BARQUISIMETO-EDO. LARA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00103686-5",
+      "nombre": "PROAGRO, C.A",
+      "direccion": "",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-31744720-4",
+      "nombre": "PROCESADORA DE ALIMENTOS COVADONGA,C.A",
+      "direccion": "CARRETERA BARCELONA-CARACAS, LOCAL CENTRO DE ALMANENAMIENTO SANO,GALPON NRO 09-ZONA INDUSTRIAL MESONES-BARCELONA-EDO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30367956-0",
+      "nombre": "PROCESADORA Y COMERCIALIZADORA EL VIGIA C.A\"",
+      "direccion": "CARRETERA PANAMERICANA,CASA S/N,SECTOR MUCUJEPE-EL VIJIA-ESTADO MERIDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "G-20010024-9",
+      "nombre": "PRODUCTORA Y DISTRIBUIDORA VENEZOLANA DE ALIMENTOS, S.A,",
+      "direccion": "ESQ.TELARES,EDIF PDVAL,PISO 1, OF MEZZANINA,SECTOR SAN JOSE.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-40648034-7",
+      "nombre": "PRODUCTORES GUEVARCA 72, C.A",
+      "direccion": "AV.COSTANERA,C.C.MORICHALITO,NIVEL 1,LOCAL 3,URB.RIOS-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00030125-5",
+      "nombre": "PRODUCTOS EFE,S.A",
+      "direccion": "AV. 4TA TRANSVERSAL CON 2DA. AVENIDA, EDIF. CENTRO EMPRESARIAL POLAR PISO 1, OF. PRICIPAL,URB. LOS CORTIJOS",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30137013-9",
+      "nombre": "Pepsi-Cola Venezuela, CA",
+      "direccion": "ESQ. 4TA TRANSVERSAL  EDIF. CENTRO EMPRESARIAL POLAR PISO 3, OF. PEPSI-COLA VENEZUELA,URB. LOS CORTIJOS DE LOURDES-CARACAS-MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-10286776-5",
+      "nombre": "RAIZA DEL CARMEN BARRERA DE DA ROCHA",
+      "direccion": "AV. PRINCIPAL DE LECHERIA-CENTRO COMERCIAL MARINA, NIVEL PB YPB6,SECTOR LECHERIA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30795279-2",
+      "nombre": "RECTIMOTORES NEVERI,C.A",
+      "direccion": "CALLE SOLEDAD CON CALLE SUCRE.EDIFICIO RECTIMOTORES NEVERI,C.A-ENTRADA POR LA CALLE SUCRE FRENTE POLLO BARRETO -BARRIO SUCRE-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30952506-9",
+      "nombre": "RECTISERCA 2003, C.A",
+      "direccion": "AV. AEROPUERTO-SECTOR BARRIO LINDO-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30672213-0",
+      "nombre": "REDIFIL ,C.A",
+      "direccion": "CALLE GUAYAQUIL.LOCAL NRO 44,SECTOR BARRIO SUCRE-BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29461614-3",
+      "nombre": "REFRIGERACION CASA FUERTE, C.A.",
+      "direccion": "AV.BOULEVARD 5 DE JULIO-LOCAL NRO C-1-SECTOR CASCO CENTRAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31249984-2",
+      "nombre": "REFRIGERACION LA GLORIA II,C.A",
+      "direccion": "CALLE SUCRE NRO 7-21-SECTOR BARIO SUCRE-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30368401-7",
+      "nombre": "REFRIGERACION MARDELLI,C.A.",
+      "direccion": "CENTRO COMERCIAL CLASSIC CENTER-PB-2,AV.LCDO DIEGO BAUTISTA URBANEJA-LECHERIA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50655036-9",
+      "nombre": "REFRIGERACIONES COROMOTO, C.A.",
+      "direccion": "CALLE SUCRE, LOCAL NRO S/N, SECTOR BARRIO SUCRE-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40694536-6",
+      "nombre": "REISERCA SUMINISTROS,CA",
+      "direccion": "AV. INTERCOMUNAL JORGE RODRIGUEZ EDIF. CENTRO COMERCIAL PARIS, PISO PB, LOCAL 6-PB, ZONA INTERCOMUNAL.LECHERIA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V-13801175-1",
+      "nombre": "RENAN JOSÉ DALENCE ASEBEY",
+      "direccion": "CALLE PRICIPAL CASA NRO S/N,SECTOR SANM IGNACIO,SAN MATEO ,ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50684582-2",
+      "nombre": "REPRESENTACIONES A&2XC, C.A",
+      "direccion": "AV.COSTANERA, CASA NRO.200, CONJUNTO RESIDENCIAL MAR DE ORIENTE-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41071017-9",
+      "nombre": "REPUESTOS CAR MONKEY, C.A",
+      "direccion": "CALLE SUCRE LOCAL NRO 5-B,SECTOR BARRIO SUCRE-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40015458-8",
+      "nombre": "REPUESTOS GUAIKIKI ORIENTE, C.A",
+      "direccion": "AV.FUERZAS ARMADAS-LOCAL NRO 1-47-SECTOR LA ADUANA-BARCELONA ANZOATEGUI.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-40186581-0",
+      "nombre": "REPUESTOS MISTER BIN, C.A",
+      "direccion": "CALLE LAS ACACIAS, LOCAL #2, SECTOR BARRIO SUCRE, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08028523-9",
+      "nombre": "RESPUESTOS EL CALLAITO, C. A",
+      "direccion": "CALLE SAN FELIPE-NRO S/N-SECTOR BARRIO PALOTAL ARRIBA-BARCELONA-EDO. ANZOATEGUI",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50372437-4",
+      "nombre": "RESUSERCA 2023 C.A",
+      "direccion": "CALLE SAN CARLOS -LOCAL NRO 36-SECTOR LA MONTAÑITA-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31225120-4",
+      "nombre": "RODAMIENTOS Y EQUIPOS DE TRANSMISION Y POTENCIA ROCCO, C.A",
+      "direccion": "AV. ARGIMIRO GABALDON ANTIGUA VIA ALTERNA-LOCAL NRO 3-SECTOR BARRIO SUCRE-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29603006-5",
+      "nombre": "RODAPUERTO,C.A",
+      "direccion": "AV. JORGE RODRIGUEZ(INTERCOMUNAL) CC.JUPITER,NIVEL PB LOCAL 3 Y A SECTOR LAS GARZAS.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40029729-0",
+      "nombre": "ROLLOS Y ETIQUETAS DE ORIENTE, C.A",
+      "direccion": "",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "V-18969228-1",
+      "nombre": "RONALD ALEXIS CRUZ VELAZCO",
+      "direccion": "AV. PEDRO MARÍA FREITES,C.C. YOLY TOY'S, NIVEL PB, LOCAL 5, SECTOR BARRIO 29 DE MARZO, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30512286-5",
+      "nombre": "RST SERVICIOS,C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "E-82292947-0",
+      "nombre": "RUICHANG CEN",
+      "direccion": "AV. CARACAS,LOCAL NRO.7-74, DIAGONAL A MERCADOS ARCO-SECTOR BUENOS AIRES-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40518962-2",
+      "nombre": "SERVICIOS EXPRESOS INTERNACIONALES DE ORIENTE, C.A",
+      "direccion": "CALLE PANTIN ENTRE C/SAMAN Y LOS ANGELES,EDIF MRW,PISO 1 OF.1, URB.CHACAO -CARACAS-MIRANDA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50486339-4",
+      "nombre": "SERVIMULTIPLES MM, C.A.",
+      "direccion": "CALLE SUCRE, SECTOR BARRIO SUCRE,BARCELONA-ED.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30219675-2",
+      "nombre": "SERVIPORK,C.A",
+      "direccion": "AV. 6TA.EDIF.LA CARAIDAD,PISO 1,OF.1,URB.LA SOLEDAD-MARACAY-EDO.ARAGUA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29724488-3",
+      "nombre": "SF IMPORTADORA ORIENTE, C.A",
+      "direccion": "CALLE MONAGAS CON LIBERAL,LOCAL 17-27,SECTOR BUENOS AIRES,BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30703308-8",
+      "nombre": "SI SABE,C.A",
+      "direccion": "AV. 1 CON CALLE E, LOCAL PARCELA Nro 26,ZONA INDUSTRIAL LOS MONTONES,BARCELONA -EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50380993-0",
+      "nombre": "SORIEGAGROUP2023, C.A.",
+      "direccion": "AV.FUERZAS ARMADAS-CC LOS CHAGUARAMOS-NIVEL BAJA-LOCAL 8-ZONA NUEVA BARCELONA-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40100889-5",
+      "nombre": "SUMATOP DISTRIBUTION, C.A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40645238-6",
+      "nombre": "SUMINISTROS JMIC,C.A",
+      "direccion": "AV. CENTURION,CASA VILLAS CENTURIONNRO 14-SECTOR NUEVA BARCELONA-BARCELONA.ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-41255818-8",
+      "nombre": "SUMINISTROS MAFE RM, CA",
+      "direccion": "AV. PEDRO MARÍA FREITES, C.C. PEDRO, NIVEL PLANTA BAJA, LOCAL 4, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31039093-2",
+      "nombre": "SUMINISTROS Y DISTRIBUCION LUSITIVEN, C.A",
+      "direccion": "CALLE FINAL, CALLE SUCRE,LOCAL GALPON NRO.SIN NUMERO-URBANIZACIÓN BARRIO SUCRE-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50156518-0",
+      "nombre": "SUPLIHOUSE 77, C.A.",
+      "direccion": "AV. JORGE RODRIGUEZ-C C BRISAS DEL NEVERI-NIVEL PB-LOCAL 6B-SECTOR NEVERI-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29391964-9",
+      "nombre": "SUPLITORMA, C. A",
+      "direccion": "AV. PEDRO MARIA FREITES,NRO 17,SECTOR CAMINO NUEVO,BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30614017-4",
+      "nombre": "SURTIBALANZAS PUERTO LA CRUZ C A",
+      "direccion": "AV. MUNICIPAL,C.C MADEIRENSE,NIVEL PB,LOCAL 18, SECTOR PUEBLO NUEVO PUERTO LA CRUZ,EDO-ANZOÀTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29767606-6",
+      "nombre": "SURTITODO LA BUENAVENTURA,C.A",
+      "direccion": "CALLE PRINCIPAL GALPON NRO 11-SECTOR BRISAS DEL NEVERI-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29934358-7",
+      "nombre": "SUSPENSION BARRIO SUCRE,C.A",
+      "direccion": "CALLE SUCRE-CON ESQUINA CALLE SOLEDAD-LOCAL NRO 13-99-SECTOR BARRIO SUCRE-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30405279-0",
+      "nombre": "SUVALCAR,C.A",
+      "direccion": "CALLE 81(HENRY FORD) NRO CIVICO64-501-C.C DESARROLLO ARQUITECTONICO UNICENTER,NIVEL P.B LOCAL 06-VALENCIA-EDO. CARABOBO.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31745163-5",
+      "nombre": "TASTY, C.A.",
+      "direccion": "AV.62-LOCAL NRO.82B-57-BARRIO ALBERTO CARNEVALI.MARACAIBO-EDO. ZULIA.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29683543-8",
+      "nombre": "TECNI RODAMIENTOS CARIBE,C .A",
+      "direccion": "AV.VIA ALTERNA CON CALLE DEMOCRACIA-NRO.S/N-SECTOR GUAMACHITO, BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-08004910-1",
+      "nombre": "TECNICOS ASOCIADOS BARCELONA,C.A(TECABAR)",
+      "direccion": "AV.JORGE RODRIGUEZ-EDIF.TECABAR-PISO 01-LOCAL 3-155-SECTOR COLINAS DEL NEVERI-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40999583-6",
+      "nombre": "TECNOLED IMPORT, C.A",
+      "direccion": "AV.INTERCOMUNAL JORGE RODRIGUEZ-EDIF. HOME DEPOT-PISO P-B-LOCAL 07-CONJUNTO RESIDENCIAL-CENTRO EMPRESARIAL LAS GARZAS-LECHERIA-ESTADO ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "G-20016137-0",
+      "nombre": "TELECOMUNICACIONES MOVILNET, C.A.",
+      "direccion": "AVENIDA VENEZUELA, CENTRO COMERCIAL EL RECREO, TORRE SUR, PISO 13, BELLO MONTE.",
+      "telefono": "GERENTE",
+      "email": ""
+    },
+    {
+      "rif": "J-00343994-0",
+      "nombre": "TELEFÓNICA VENEZOLANA, C.A.",
+      "direccion": "AV.FRANCISCO DE MIRANDA CC EL PARQUE NIVEL 6 OF 6 URB. LOS PALOS GRANDES CARACAS(CHACAO) MIRANDA",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-31187610-3",
+      "nombre": "TODOHOGAR VISTAMAR, C. A",
+      "direccion": "AV. INTERCOMUNAL JORGE RODRIGUEZ-C. C VISTAMAR-NIVEL PB LOCAL 17-SECTOR VISTAMAR,LECHERIA-ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29362780-0",
+      "nombre": "TODOHOGAR,C.A",
+      "direccion": "AV BOULEVAR 5 DE JULIO,LOCAL NRO 6-28,SECTOR CASCO CENTRAL,BARCELONA-EDO.ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50183817-8",
+      "nombre": "TORNILLERIA Y FERRETERIA JW, C.A",
+      "direccion": "CALLE SUCRE-LOCAL S/N-SECTOR BARRIO SUCRE-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50474914-1",
+      "nombre": "TORNILLOS ATLANTICO, C.A.",
+      "direccion": "AV.JUAN DE URPIN-LOCAL NRO 7-86-SECTOR EL ESPEJO-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30934675-0",
+      "nombre": "TORNILLOS DEL NORTE 2002, C.A.",
+      "direccion": "CALLE SUCRE-CASA NRO 89-9-BARRIO SUCRE-BARCELONA-EDO.ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-30671565-7",
+      "nombre": "TORNILLOS NEVERI, C .A",
+      "direccion": "",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40166428-8",
+      "nombre": "TRAKI ORIENTE PLUS, C.A.",
+      "direccion": "AV. CUCHIVEROS-CC ZULIA-NIVEL PB-LOCAL1-SECTOR ALTA VISTA PUERTO ORDAZ-ESTADO BOLIVAR.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-00220608-0",
+      "nombre": "TRANSFERENCIAS Y ENCOMIENDAS ANGULO LÓPEZ,C.A",
+      "direccion": "ESQ.AL ESTE DEL PUENTE SOUBLETTE, ACCESO A LA AV.SUR 2 BIS BIS CON CALLE 100-LOCAL GALPO NRO S/N URB.QUINTA CRESPO-CARACAS-DISTRITO CAPITAL",
+      "telefono": "ADMINISTRADORA",
+      "email": ""
+    },
+    {
+      "rif": "J-40739864-4",
+      "nombre": "TRANSPORTE, SERVICIOS Y SUMINISTROS ALCANTARA, C.A",
+      "direccion": "CALLE ESPERANZA CASA Nro A-11, BARRIO SIMON BOLIVAR I, BARCELONA-ESTADO ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-50135686-6",
+      "nombre": "TREBOLL´S MARKET, C,A.",
+      "direccion": "AV.CUMANAGOTO,LOCAL NRO S/N- BARRIO BUENOS AIRES-BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-29870626-0",
+      "nombre": "VENECHILE SERVICIOS C A",
+      "direccion": "AVENIDA PEDRO MARIA FREITES, GALPON NRO 9-97,OFICINA NRO 2, SECTOR CAYAURIMA- BARCELONA-EDO. ANZOATEGUI.",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "V.-13783769-9",
+      "nombre": "YOHANA YOKCELIN CAMPOS VILLAMIZAR",
+      "direccion": "CALLE MONAGAS , CASA NRO.20-15-BUENOS AIRES",
+      "telefono": "",
+      "email": ""
+    },
+    {
+      "rif": "J-40343571-5",
+      "nombre": "ZONA FRIO EXPRESS, C.A.",
+      "direccion": "AV. EL AMOR-LOCAL VEREDA 4-URB. PORTUGAL-BARCELONA-EDO. ANZOÁTEGUI.",
+      "telefono": "",
+      "email": ""
+    }
+  ]
+}
