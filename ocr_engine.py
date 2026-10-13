@@ -119,67 +119,83 @@ def compress_image(image_path: Path, max_size_mb: float = 2.0, max_dim: int = 18
 
 
 def extract_with_minimax(image_path: Path) -> dict:
-    """Extrae datos de factura usando MiniMax Vision."""
+    """Extrae datos de factura usando MiniMax Vision con reintentos."""
     if not API_KEY:
         return {"error": "API key no configurada"}
 
-    # Comprimir imagen si es muy grande
+    # Comprimir imagen si es muy grande (mas de 2MB)
     file_size_mb = image_path.stat().st_size / (1024 * 1024)
-    print(f"[OCR] Imagen original: {file_size_mb:.1f}MB")
+    print(f"[OCR] Imagen original: {file_size_mb:.2f}MB")
     if file_size_mb > 2:
-        print("[OCR] Comprimiendo imagen para acelerar...")
+        print("[OCR] Comprimiendo imagen...")
         image_path, was_compressed = compress_image(image_path, max_size_mb=2.0, max_dim=1800)
-        if was_compressed:
-            new_size = image_path.stat().st_size / (1024 * 1024)
-            print(f"[OCR] Imagen comprimida: {new_size:.1f}MB")
 
     img_b64 = encode_image(image_path)
     ext = image_path.suffix.lower().lstrip(".")
     mime = "image/jpeg" if ext in ("jpg", "jpeg") else f"image/{ext}"
     data_url = f"data:{mime};base64,{img_b64}"
     b64_size_kb = len(img_b64) / 1024
-    print(f"[OCR] Enviando a MiniMax Vision ({b64_size_kb:.0f}KB base64)...")
+    print(f"[OCR] Payload: {b64_size_kb:.0f}KB base64")
+    print(f"[OCR] Enviando a MiniMax Vision...")
 
-    try:
-        r = requests.post(
-            f"{BASE_URL}/chat/completions",
-            headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"},
-            json={
-                "model": MODEL,
-                "messages": [
-                    {"role": "user", "content": [
-                        {"type": "text", "text": EXTRACTION_PROMPT},
-                        {"type": "image_url", "image_url": {"url": data_url}}
-                    ]}
-                ],
-                "temperature": 0.1,
-                "max_tokens": 2000
-            },
-            timeout=120  # 2 minutos maximo (facturas reales pueden tardar)
-        )
-        r.raise_for_status()
-        content = r.json()["choices"][0]["message"]["content"].strip()
-        # Limpiar thinking
-        if "<think>" in content:
-            end = content.find("</think>")
-            if end != -1:
-                content = content[end + len("</think>"):].strip()
-        # Extraer JSON
-        start = content.find("{")
-        end = content.rfind("}") + 1
-        if start != -1 and end > start:
-            content = content[start:end]
-        return json.loads(content)
-    except requests.Timeout:
-        return {"error": "La API de MiniMax tardo mas de 2 min. La imagen puede ser muy compleja. Intenta con una version reducida."}
-    except requests.ConnectionError:
-        return {"error": "Sin conexion a internet. Verifica tu red."}
-    except requests.HTTPError as e:
-        return {"error": f"Error HTTP {e.response.status_code}: {e.response.text[:200]}"}
-    except json.JSONDecodeError as e:
-        return {"error": f"JSON invalido de la IA: {e}", "raw": content[:500] if 'content' in dir() else ''}
-    except Exception as e:
-        return {"error": f"Error inesperado: {e}"}
+    # Reintentos con backoff
+    max_retries = 3
+    retry_delay = 5
+    last_error = None
+    for attempt in range(1, max_retries + 1):
+        try:
+            r = requests.post(
+                f"{BASE_URL}/chat/completions",
+                headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"},
+                json={
+                    "model": MODEL,
+                    "messages": [
+                        {"role": "user", "content": [
+                            {"type": "text", "text": EXTRACTION_PROMPT},
+                            {"type": "image_url", "image_url": {"url": data_url}}
+                        ]}
+                    ],
+                    "temperature": 0.1,
+                    "max_tokens": 2000
+                },
+                timeout=60  # 60 segundos por intento
+            )
+            r.raise_for_status()
+            content = r.json()["choices"][0]["message"]["content"].strip()
+            # Limpiar thinking
+            if "<think>" in content:
+                end = content.find("</think>")
+                if end != -1:
+                    content = content[end + len("</think>"):].strip()
+            # Extraer JSON
+            start = content.find("{")
+            end = content.rfind("}") + 1
+            if start != -1 and end > start:
+                content = content[start:end]
+            print(f"[OCR] Exito en intento {attempt}")
+            return json.loads(content)
+        except requests.Timeout:
+            last_error = f"Timeout en intento {attempt}/{max_retries}"
+            print(f"[OCR] {last_error}")
+            if attempt < max_retries:
+                import time as _t
+                print(f"[OCR] Esperando {retry_delay}s antes de reintentar...")
+                _t.sleep(retry_delay)
+        except requests.ConnectionError as e:
+            last_error = f"Sin conexion: {e}"
+            print(f"[OCR] {last_error}")
+            break  # No reintentar si no hay conexion
+        except requests.HTTPError as e:
+            last_error = f"Error HTTP {e.response.status_code}: {e.response.text[:200]}"
+            print(f"[OCR] {last_error}")
+            break
+        except json.JSONDecodeError as e:
+            return {"error": f"JSON invalido: {e}", "raw": content[:500] if 'content' in dir() else ''}
+        except Exception as e:
+            last_error = f"Error: {e}"
+            print(f"[OCR] {last_error}")
+            break
+    return {"error": f"Fallaron {max_retries} intentos: {last_error}"}
 
 
 def extract_with_tesseract(image_path: Path) -> dict:
