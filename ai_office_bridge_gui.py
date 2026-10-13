@@ -514,7 +514,7 @@ class AIBridge(tk.Tk):
         if not path:
             return
         self._log(f"Cargando: {Path(path).name}...", "info")
-        self._set_status("Extrayendo con MiniMax Vision...")
+        self._set_status("Extrayendo datos de la factura...")
         self.update_idletasks()
         try:
             datos = extract_from_file(Path(path))
@@ -561,6 +561,12 @@ class AIBridge(tk.Tk):
         FormularioFactura(self, on_submit=self._on_factura_guardada,
                           datos_extraidos=datos, aplicar_iva=aplicar_iva)
         self._log("Abriendo formulario pre-llenado...", "info")
+
+    def _entrada_manual(self):
+        """Abre el form de factura vacio para entrada manual."""
+        self._log("Abriendo entrada manual...", "info")
+        FormularioFactura(self, on_submit=self._on_factura_guardada,
+                          datos_extraidos=None)
 
     def _nueva_factura(self):
         if not self.archivo_actual:
