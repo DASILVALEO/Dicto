@@ -43,6 +43,9 @@ def is_configured() -> bool:
     cfg = load_config()
     return all([cfg.get("smtp_server"), cfg.get("username"), cfg.get("password")])
 
+# Alias para compatibilidad
+is_email_configured = is_configured
+
 
 def send_comprobante_email(comprobante_path: Path, datos: dict,
                           extra_attachments: List[Path] = None) -> tuple[bool, str]:
