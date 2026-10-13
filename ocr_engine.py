@@ -224,7 +224,10 @@ def _parse_text_fallback(texto: str) -> dict:
         "total": 0.0,
         "items": [],
         "confianza_extraccion": 30,  # Bajo porque es OCR
+        "metodo_extraccion": "tesseract",
     }
+    if not texto:
+        return datos
     # RIF
     m = re.search(r"([JVE])-(\d{8})-(\d)", texto, re.IGNORECASE)
     if m:
@@ -259,27 +262,32 @@ def _parse_text_fallback(texto: str) -> dict:
 def extract_from_file(file_path: Path) -> dict:
     """Extrae datos de un archivo. Usa MiniMax primero, fallback a tesseract."""
     if not file_path.exists():
-        return {"error": "Archivo no existe"}
+        return {"error": "Archivo no existe", "metodo_extraccion": "ninguno"}
     # Detectar si es PDF
     if file_path.suffix.lower() == ".pdf":
         return _extract_from_pdf(file_path)
     # Intentar MiniMax primero
     if API_KEY:
-        resultado = extract_with_minimax(file_path)
-        if "error" not in resultado:
-            return resultado
-        # Si fallo, intentar tesseract automaticamente
-        print(f"[OCR] MiniMax fallo: {resultado.get('error', '?')}")
+        try:
+            resultado = extract_with_minimax(file_path)
+            if "error" not in resultado and resultado.get("numero_factura"):
+                return resultado
+            # Si fallo o no extrajo nada, intentar tesseract
+            print(f"[OCR] MiniMax no dio datos validos: {resultado.get('error', '?')}")
+        except Exception as e:
+            print(f"[OCR] Excepcion en MiniMax: {e}")
+        # Fallback a tesseract
         print("[OCR] Intentando con tesseract (OCR local)...")
-        tesseract_result = extract_with_tesseract(file_path)
-        if "error" not in tesseract_result:
-            tesseract_result["metodo_extraccion"] = "tesseract (fallback)"
-            tesseract_result["confianza_extraccion"] = 30  # Bajo
-            tesseract_result["nota"] = "MiniMax fallo, se uso OCR local. Verifica los datos."
+        try:
+            tesseract_result = extract_with_tesseract(file_path)
+            tesseract_result["metodo_extraccion"] = "tesseract"
+            tesseract_result["confianza_extraccion"] = 30
+            tesseract_result["nota"] = "OCR local. Verifica los datos manualmente."
             return tesseract_result
-        # Si tesseract tambien fallo, retornar el error de MiniMax (mas informativo)
-        return resultado
-    # Si no hay API key, usar tesseract directamente
+        except Exception as e:
+            return {"error": f"MiniMax y tesseract fallaron: {e}",
+                    "metodo_extraccion": "ninguno"}
+    # Si no hay API key, tesseract directo
     return extract_with_tesseract(file_path)
 
 
