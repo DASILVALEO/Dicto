@@ -198,8 +198,78 @@ def extract_with_minimax(image_path: Path) -> dict:
     return {"error": f"Fallaron {max_retries} intentos: {last_error}"}
 
 
+def preprocess_image(image_path: Path) -> "Image.Image":
+    """Preprocesa una imagen para mejorar la calidad del OCR.
+
+    Pasos:
+    1. Escala de grises
+    2. Aumentar tamano si es muy pequena
+    3. CLAHE (ecualizacion de histograma adaptativa)
+    4. Binarizacion Otsu
+    5. Deskew (corregir inclinacion)
+    """
+    try:
+        import cv2
+        import numpy as np
+        from PIL import Image
+    except ImportError:
+        from PIL import Image
+        return Image.open(image_path)
+
+    # Leer imagen
+    img = cv2.imread(str(image_path))
+    if img is None:
+        from PIL import Image
+        return Image.open(image_path)
+
+    # Convertir a gris
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
+    # Aumentar tamano si es muy pequena (< 2000px ancho)
+    h, w = gray.shape
+    if max(h, w) < 2000:
+        scale = 2000 / max(h, w)
+        new_w, new_h = int(w * scale), int(h * scale)
+        gray = cv2.resize(gray, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
+
+    # CLAHE: ecualizacion adaptativa
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    gray = clahe.apply(gray)
+
+    # Denoising
+    gray = cv2.fastNlMeansDenoising(gray, h=10)
+
+    # Deskew (corregir inclinacion)
+    try:
+        # Detectar angulo de inclinacion
+        edges = cv2.Canny(gray, 50, 150, apertureSize=3)
+        lines = cv2.HoughLines(edges, 1, np.pi / 180, 200)
+        if lines is not None and len(lines) > 0:
+            angles = []
+            for rho, theta in lines[:, 0, :]:
+                angle = theta - np.pi / 2
+                if abs(angle) < 0.5:  # Solo desviaciones pequenas
+                    angles.append(angle)
+            if angles:
+                median_angle = np.median(angles)
+                if abs(median_angle) > 0.01:  # Solo rotar si es significativo
+                    M = cv2.getRotationMatrix2D((gray.shape[1] / 2, gray.shape[0] / 2),
+                                                np.degrees(median_angle), 1)
+                    gray = cv2.warpAffine(gray, M, (gray.shape[1], gray.shape[0]),
+                                          borderMode=cv2.BORDER_CONSTANT,
+                                          borderValue=(255, 255, 255))
+    except Exception:
+        pass
+
+    # Binarizacion Otsu
+    _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+
+    # Convertir de vuelta a PIL Image
+    return Image.fromarray(binary)
+
+
 def extract_with_tesseract(image_path: Path) -> dict:
-    """OCR con tesseract (idioma espanol)."""
+    """OCR con tesseract (idioma espanol) + preprocesamiento."""
     import os
 
     # Configurar la ruta al ejecutable de tesseract
@@ -216,7 +286,7 @@ def extract_with_tesseract(image_path: Path) -> dict:
     if not tesseract_exe:
         return {"error": "tesseract.exe no encontrado. Instala tesseract."}
 
-    # Configurar TESSDATA_PREFIX para que encuentre spa.traineddata
+    # Configurar TESSDATA_PREFIX
     if "TESSDATA_PREFIX" not in os.environ:
         candidates = [
             Path("C:/Users/USUARIO/.tessdata"),
@@ -234,19 +304,34 @@ def extract_with_tesseract(image_path: Path) -> dict:
     except ImportError:
         return {"error": "pytesseract o Pillow no instalado"}
 
-    # Decirle a pytesseract donde esta el ejecutable
     pytesseract.pytesseract.tesseract_cmd = tesseract_exe
 
-    img = Image.open(image_path)
+    # Preprocesar la imagen (mejora MUCHO la calidad del OCR)
     try:
-        texto = pytesseract.image_to_string(img, lang="spa", config="--oem 3 --psm 6")
-    except pytesseract.TesseractNotFoundError:
-        return {"error": f"tesseract no encontrado en {tesseract_exe}"}
-    except Exception as e:
+        img_processed = preprocess_image(image_path)
+    except Exception:
+        from PIL import Image
+        img_processed = Image.open(image_path)
+
+    # Tesseract con parametros optimizados para facturas
+    configs = [
+        "--oem 3 --psm 6",  # LSTM engine, block of text
+        "--oem 3 --psm 4",  # LSTM, single column
+        "--oem 3 --psm 3",  # LSTM, fully automatic
+    ]
+    texto = ""
+    for cfg in configs:
         try:
-            texto = pytesseract.image_to_string(img, lang="spa")
-        except Exception as e2:
-            return {"error": f"Error tesseract: {e2}"}
+            t = pytesseract.image_to_string(img_processed, lang="spa", config=cfg)
+            if len(t) > len(texto):
+                texto = t
+        except Exception:
+            continue
+    if not texto:
+        try:
+            texto = pytesseract.image_to_string(img_processed, lang="spa")
+        except Exception as e:
+            return {"error": f"Error tesseract: {e}"}
     return _parse_text_fallback(texto)
 
 
