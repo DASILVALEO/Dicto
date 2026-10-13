@@ -1,0 +1,213 @@
+"""
+Motor de extraccion OCR usando MiniMax Vision.
+
+Cuando hay internet: usa MiniMax Vision (alta precision).
+Cuando no hay: usa pytesseract (OCR tradicional).
+"""
+import os
+import sys
+import json
+import base64
+import re
+import requests
+from pathlib import Path
+from typing import Optional
+
+API_KEY = os.environ.get("MINIMAX_API_KEY") or _load_key()
+BASE_URL = "https://api.minimax.io/v1"
+MODEL = "MiniMax-M3"
+
+EXTRACTION_PROMPT = """Eres un asistente contable venezolano experto en facturas.
+
+Analiza esta imagen de factura y extrae EXCLUSIVAMENTE un JSON con esta estructura.
+NO incluyas explicaciones, solo el JSON.
+
+{
+  "numero_factura": "string",
+  "fecha_emision": "DD/MM/YYYY",
+  "fecha_recepcion": "DD/MM/YYYY",
+  "nombre_proveedor": "string",
+  "rif_proveedor": "J-12345678-9 o V-12345678-9 o E-12345678-9",
+  "direccion_proveedor": "string",
+  "telefono_proveedor": "string",
+  "email_proveedor": "string (si esta visible)",
+  "numero_control": "string (si esta visible)",
+  "subtotal": numero_decimal,
+  "iva": numero_decimal,
+  "total": numero_decimal,
+  "moneda": "Bs. o USD o EUR",
+  "items": [
+    {"cantidad": numero, "descripcion": "string", "precio_unitario": numero, "total": numero}
+  ],
+  "tipo_servicio": "bienes o servicios u honorarios u arrendamiento",
+  "aplica_retencion_iva": true_o_false,
+  "aplica_retencion_islr": true_o_false,
+  "porcentaje_iva_retenido": numero (0, 75, 100),
+  "porcentaje_islr_retenido": numero (0, 2, 3, 5, 10, 12, 100),
+  "confianza_extraccion": numero_entre_0_y_100
+}
+
+Reglas:
+- Si no puedes leer un campo, usa string vacio "" o null
+- Fechas en formato DD/MM/YYYY
+- Montos en numeros (sin puntos de miles, con punto decimal)
+- El RIF venezolano tiene formato J-XXXXXXXX-X, V-XXXXXXXX, E-XXXXXXXX
+- Si la factura es de BIENES, retencion IVA 75%
+- Si es SERVICIOS, retencion IVA 75% o ISLR segun el caso
+- Si son HONORARIOS PROFESIONALES, retencion ISLR 100% sobre base imponible
+- Si es ARRENDAMIENTO, retencion ISLR 10% sobre la renta
+
+Devuelve SOLO el JSON."""
+
+
+def _load_key():
+    """Carga API key de ~/.dictation_config.json"""
+    cfg_path = Path.home() / ".dictation_config.json"
+    if cfg_path.exists():
+        try:
+            cfg = json.loads(cfg_path.read_text(encoding="utf-8-sig"))
+            return cfg.get("minimax_api_key", "")
+        except Exception:
+            pass
+    return ""
+
+
+def encode_image(image_path: Path) -> str:
+    """Convierte imagen a base64."""
+    with open(image_path, "rb") as f:
+        return base64.b64encode(f.read()).decode("utf-8")
+
+
+def extract_with_minimax(image_path: Path) -> dict:
+    """Extrae datos de factura usando MiniMax Vision."""
+    if not API_KEY:
+        return {"error": "API key no configurada"}
+    img_b64 = encode_image(image_path)
+    ext = image_path.suffix.lower().lstrip(".")
+    mime = "image/jpeg" if ext in ("jpg", "jpeg") else f"image/{ext}"
+    data_url = f"data:{mime};base64,{img_b64}"
+
+    r = requests.post(
+        f"{BASE_URL}/chat/completions",
+        headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"},
+        json={
+            "model": MODEL,
+            "messages": [
+                {"role": "user", "content": [
+                    {"type": "text", "text": EXTRACTION_PROMPT},
+                    {"type": "image_url", "image_url": {"url": data_url}}
+                ]}
+            ],
+            "temperature": 0.1,
+            "max_tokens": 2000
+        },
+        timeout=60
+    )
+    r.raise_for_status()
+    content = r.json()["choices"][0]["message"]["content"].strip()
+    # Limpiar thinking
+    if "<think>" in content:
+        end = content.find("</think>")
+        if end != -1:
+            content = content[end + len("</think>"):].strip()
+    # Extraer JSON
+    start = content.find("{")
+    end = content.rfind("}") + 1
+    if start != -1 and end > start:
+        content = content[start:end]
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError as e:
+        return {"error": f"JSON invalido: {e}", "raw": content[:500]}
+
+
+def extract_with_tesseract(image_path: Path) -> dict:
+    """Fallback: OCR tradicional con pytesseract."""
+    try:
+        import pytesseract
+        from PIL import Image
+    except ImportError:
+        return {"error": "pytesseract o Pillow no instalado"}
+
+    img = Image.open(image_path)
+    texto = pytesseract.image_to_string(img, lang="spa")
+    return _parse_text_fallback(texto)
+
+
+def _parse_text_fallback(texto: str) -> dict:
+    """Parsea texto OCR con regex para extraer campos basicos."""
+    datos = {
+        "numero_factura": "",
+        "fecha_emision": "",
+        "fecha_recepcion": "",
+        "nombre_proveedor": "",
+        "rif_proveedor": "",
+        "subtotal": 0.0,
+        "iva": 0.0,
+        "total": 0.0,
+        "items": [],
+        "confianza_extraccion": 30,  # Bajo porque es OCR
+    }
+    # RIF
+    m = re.search(r"([JVE])-(\d{8})-(\d)", texto, re.IGNORECASE)
+    if m:
+        datos["rif_proveedor"] = f"{m.group(1).upper()}-{m.group(2)}-{m.group(3)}"
+    # Fechas
+    fechas = re.findall(r"(\d{1,2}[/-]\d{1,2}[/-]\d{2,4})", texto)
+    if fechas:
+        datos["fecha_emision"] = fechas[0].replace("-", "/")
+        if len(fechas) > 1:
+            datos["fecha_recepcion"] = fechas[1].replace("-", "/")
+    # Numero de factura (busca FACTURA, NRO, etc.)
+    m = re.search(r"(?:factura|nro|n[uú]mero)[\s#:]*([A-Z0-9-]{4,20})",
+                  texto, re.IGNORECASE)
+    if m:
+        datos["numero_factura"] = m.group(1).strip()
+    # Subtotal, IVA, Total
+    for campo, patron in [
+        ("subtotal", r"subtotal[\s:]*\$?\s*([\d.,]+)"),
+        ("iva", r"i\.?v\.?a\.?\s*[\d]*%?[\s:]*\$?\s*([\d.,]+)"),
+        ("total", r"total[\s:]*\$?\s*([\d.,]+)"),
+    ]:
+        m = re.search(patron, texto, re.IGNORECASE)
+        if m:
+            try:
+                val = m.group(1).replace(".", "").replace(",", ".")
+                datos[campo] = float(val)
+            except ValueError:
+                pass
+    return datos
+
+
+def extract_from_file(file_path: Path) -> dict:
+    """Extrae datos de un archivo. Usa MiniMax si hay internet, sino tesseract."""
+    if not file_path.exists():
+        return {"error": "Archivo no existe"}
+    # Detectar si es PDF
+    if file_path.suffix.lower() == ".pdf":
+        # Convertir PDF a imagen
+        return _extract_from_pdf(file_path)
+    # Si es imagen, intentar con MiniMax primero
+    if API_KEY:
+        try:
+            return extract_with_minimax(file_path)
+        except Exception as e:
+            print(f"[WARN] MiniMax fallo: {e}, fallback a tesseract")
+    # Fallback
+    return extract_with_tesseract(file_path)
+
+
+def _extract_from_pdf(pdf_path: Path) -> dict:
+    """Extrae texto de PDF primero, luego envia a MiniMax."""
+    try:
+        import pdfplumber
+    except ImportError:
+        return {"error": "pdfplumber no instalado"}
+    texto = ""
+    with pdfplumber.open(pdf_path) as pdf:
+        for page in pdf.pages:
+            texto += page.extract_text() or ""
+    if not texto.strip():
+        return {"error": "PDF sin texto extraible, requiere OCR de imagen"}
+    # Si hay texto, parsear con regex
+    return _parse_text_fallback(texto)
