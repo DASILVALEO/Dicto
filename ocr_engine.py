@@ -82,43 +82,61 @@ def extract_with_minimax(image_path: Path) -> dict:
     """Extrae datos de factura usando MiniMax Vision."""
     if not API_KEY:
         return {"error": "API key no configurada"}
+
+    # Verificar tamano del archivo
+    file_size_mb = image_path.stat().st_size / (1024 * 1024)
+    if file_size_mb > 20:
+        return {"error": f"Imagen muy grande ({file_size_mb:.1f}MB). Maximo 20MB."}
+
     img_b64 = encode_image(image_path)
     ext = image_path.suffix.lower().lstrip(".")
     mime = "image/jpeg" if ext in ("jpg", "jpeg") else f"image/{ext}"
     data_url = f"data:{mime};base64,{img_b64}"
 
-    r = requests.post(
-        f"{BASE_URL}/chat/completions",
-        headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"},
-        json={
-            "model": MODEL,
-            "messages": [
-                {"role": "user", "content": [
-                    {"type": "text", "text": EXTRACTION_PROMPT},
-                    {"type": "image_url", "image_url": {"url": data_url}}
-                ]}
-            ],
-            "temperature": 0.1,
-            "max_tokens": 2000
-        },
-        timeout=60
-    )
-    r.raise_for_status()
-    content = r.json()["choices"][0]["message"]["content"].strip()
-    # Limpiar thinking
-    if "<think>" in content:
-        end = content.find("</think>")
-        if end != -1:
-            content = content[end + len("</think>"):].strip()
-    # Extraer JSON
-    start = content.find("{")
-    end = content.rfind("}") + 1
-    if start != -1 and end > start:
-        content = content[start:end]
+    # Tama~o de la imagen en base64
+    b64_size_kb = len(img_b64) / 1024
+    print(f"[OCR] Imagen: {file_size_mb:.1f}MB ({b64_size_kb:.0f}KB base64)")
+
     try:
+        r = requests.post(
+            f"{BASE_URL}/chat/completions",
+            headers={"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"},
+            json={
+                "model": MODEL,
+                "messages": [
+                    {"role": "user", "content": [
+                        {"type": "text", "text": EXTRACTION_PROMPT},
+                        {"type": "image_url", "image_url": {"url": data_url}}
+                    ]}
+                ],
+                "temperature": 0.1,
+                "max_tokens": 2000
+            },
+            timeout=30  # 30 segundos maximo
+        )
+        r.raise_for_status()
+        content = r.json()["choices"][0]["message"]["content"].strip()
+        # Limpiar thinking
+        if "<think>" in content:
+            end = content.find("</think>")
+            if end != -1:
+                content = content[end + len("</think>"):].strip()
+        # Extraer JSON
+        start = content.find("{")
+        end = content.rfind("}") + 1
+        if start != -1 and end > start:
+            content = content[start:end]
         return json.loads(content)
+    except requests.Timeout:
+        return {"error": "La API de MiniMax tardo demasiado (>30s). Intenta con una imagen mas pequena o menos pesada."}
+    except requests.ConnectionError:
+        return {"error": "Sin conexion a internet. Verifica tu red."}
+    except requests.HTTPError as e:
+        return {"error": f"Error HTTP {e.response.status_code}: {e.response.text[:200]}"}
     except json.JSONDecodeError as e:
-        return {"error": f"JSON invalido: {e}", "raw": content[:500]}
+        return {"error": f"JSON invalido de la IA: {e}", "raw": content[:500] if 'content' in dir() else ''}
+    except Exception as e:
+        return {"error": f"Error inesperado: {e}"}
 
 
 def extract_with_tesseract(image_path: Path) -> dict:
