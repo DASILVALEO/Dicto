@@ -257,20 +257,29 @@ def _parse_text_fallback(texto: str) -> dict:
 
 
 def extract_from_file(file_path: Path) -> dict:
-    """Extrae datos de un archivo. Usa MiniMax si hay internet, sino tesseract."""
+    """Extrae datos de un archivo. Usa MiniMax primero, fallback a tesseract."""
     if not file_path.exists():
         return {"error": "Archivo no existe"}
     # Detectar si es PDF
     if file_path.suffix.lower() == ".pdf":
-        # Convertir PDF a imagen
         return _extract_from_pdf(file_path)
-    # Si es imagen, intentar con MiniMax primero
+    # Intentar MiniMax primero
     if API_KEY:
-        try:
-            return extract_with_minimax(file_path)
-        except Exception as e:
-            print(f"[WARN] MiniMax fallo: {e}, fallback a tesseract")
-    # Fallback
+        resultado = extract_with_minimax(file_path)
+        if "error" not in resultado:
+            return resultado
+        # Si fallo, intentar tesseract automaticamente
+        print(f"[OCR] MiniMax fallo: {resultado.get('error', '?')}")
+        print("[OCR] Intentando con tesseract (OCR local)...")
+        tesseract_result = extract_with_tesseract(file_path)
+        if "error" not in tesseract_result:
+            tesseract_result["metodo_extraccion"] = "tesseract (fallback)"
+            tesseract_result["confianza_extraccion"] = 30  # Bajo
+            tesseract_result["nota"] = "MiniMax fallo, se uso OCR local. Verifica los datos."
+            return tesseract_result
+        # Si tesseract tambien fallo, retornar el error de MiniMax (mas informativo)
+        return resultado
+    # Si no hay API key, usar tesseract directamente
     return extract_with_tesseract(file_path)
 
 
