@@ -201,9 +201,23 @@ def extract_with_minimax(image_path: Path) -> dict:
 def extract_with_tesseract(image_path: Path) -> dict:
     """OCR con tesseract (idioma espanol)."""
     import os
-    # Configurar TESSDATA_PREFIX si no esta
+
+    # Configurar la ruta al ejecutable de tesseract
+    tesseract_paths = [
+        Path("C:/Program Files/Tesseract-OCR/tesseract.exe"),
+        Path("C:/Program Files (x86)/Tesseract-OCR/tesseract.exe"),
+        Path("C:/Users/USUARIO/AppData/Local/Programs/Tesseract-OCR/tesseract.exe"),
+    ]
+    tesseract_exe = None
+    for p in tesseract_paths:
+        if p.exists():
+            tesseract_exe = str(p)
+            break
+    if not tesseract_exe:
+        return {"error": "tesseract.exe no encontrado. Instala tesseract."}
+
+    # Configurar TESSDATA_PREFIX para que encuentre spa.traineddata
     if "TESSDATA_PREFIX" not in os.environ:
-        # Buscar spa.traineddata en ubicaciones conocidas
         candidates = [
             Path("C:/Users/USUARIO/.tessdata"),
             Path("C:/Program Files/Tesseract-OCR/tessdata"),
@@ -220,11 +234,19 @@ def extract_with_tesseract(image_path: Path) -> dict:
     except ImportError:
         return {"error": "pytesseract o Pillow no instalado"}
 
+    # Decirle a pytesseract donde esta el ejecutable
+    pytesseract.pytesseract.tesseract_cmd = tesseract_exe
+
     img = Image.open(image_path)
     try:
         texto = pytesseract.image_to_string(img, lang="spa", config="--oem 3 --psm 6")
-    except Exception:
-        texto = pytesseract.image_to_string(img, lang="spa")
+    except pytesseract.TesseractNotFoundError:
+        return {"error": f"tesseract no encontrado en {tesseract_exe}"}
+    except Exception as e:
+        try:
+            texto = pytesseract.image_to_string(img, lang="spa")
+        except Exception as e2:
+            return {"error": f"Error tesseract: {e2}"}
     return _parse_text_fallback(texto)
 
 
