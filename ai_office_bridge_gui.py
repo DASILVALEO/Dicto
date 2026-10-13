@@ -519,15 +519,29 @@ class AIBridge(tk.Tk):
         try:
             datos = extract_from_file(Path(path))
         except Exception as e:
-            self._log(f"Error: {e}", "error")
-            messagebox.showerror("Error", str(e))
+            self._log(f"Error critico: {e}", "error")
+            messagebox.showerror("Error critico", str(e))
             return
-        if "error" in datos:
-            self._log(f"Error: {datos['error']}", "error")
-            messagebox.showerror("Error", datos["error"])
+        # Verificar si hubo error
+        if "error" in datos and not datos.get("numero_factura"):
+            metodo = datos.get("metodo_extraccion", "ninguno")
+            self._log(f"OCR no extrajo datos validos. Metodo: {metodo}", "warn")
+            self._log(f"  Error: {datos.get('error', '?')}", "error")
+            self._log("  Abriendo form vacio para que llenes manualmente...", "info")
+            # Abrir form de todos modos (vacio)
+            FormularioFactura(self, on_submit=self._on_factura_guardada,
+                              datos_extraidos=None)
+            messagebox.showinfo("OCR no disponible",
+                                "No se pudo extraer datos automaticamente.\n"
+                                "El formulario se abrio vacio para que lo llenes manualmente.\n\n"
+                                f"Metodo intentado: {metodo}\n"
+                                "Tip: verifica tu conexion a internet o la API key de MiniMax.")
             return
+        # OK, datos extraidos
         self.datos_extraidos = datos
-        self._log(f"OCR: {datos.get('confianza_extraccion', '?')}% confianza", "ok")
+        metodo = datos.get("metodo_extraccion", "MiniMax")
+        confianza = datos.get("confianza_extraccion", "?")
+        self._log(f"OCR OK ({metodo}, {confianza}% confianza)", "ok")
         self._log(f"  N Factura: {datos.get('numero_factura', 'N/A')}", "ai")
         self._log(f"  Proveedor: {datos.get('nombre_proveedor', 'N/A')}", "ai")
         # Verificar match con catalogo
@@ -536,7 +550,7 @@ class AIBridge(tk.Tk):
         if match:
             self._log(f"  Match en catalogo: {match['nombre']} ({match['rif']})", "ok")
         else:
-            self._log("  Sin match en catalogo (proveedor nuevo?)", "warn")
+            self._log("  Sin match en catalogo", "warn")
         # Preview
         self.preview.config(state="normal")
         self.preview.delete("1.0", "end")
