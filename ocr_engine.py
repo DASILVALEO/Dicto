@@ -201,70 +201,36 @@ def extract_with_minimax(image_path: Path) -> dict:
 def preprocess_image(image_path: Path) -> "Image.Image":
     """Preprocesa una imagen para mejorar la calidad del OCR.
 
-    Pasos:
-    1. Escala de grises
-    2. Aumentar tamano si es muy pequena
-    3. CLAHE (ecualizacion de histograma adaptativa)
-    4. Binarizacion Otsu
-    5. Deskew (corregir inclinacion)
+    Solo hace resize si la imagen es muy pequena.
+    En Sandy Bridge (CPU lento) evitamos operaciones pesadas.
     """
     try:
         import cv2
-        import numpy as np
         from PIL import Image
     except ImportError:
         from PIL import Image
         return Image.open(image_path)
 
-    # Leer imagen
-    img = cv2.imread(str(image_path))
-    if img is None:
-        from PIL import Image
+    img_cv = cv2.imread(str(image_path))
+    if img_cv is None:
         return Image.open(image_path)
 
-    # Convertir a gris
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-    # Aumentar tamano si es muy pequena (< 2000px ancho)
-    h, w = gray.shape
-    if max(h, w) < 2000:
-        scale = 2000 / max(h, w)
+    # Solo resize si es muy pequena
+    h, w = img_cv.shape[:2]
+    if max(h, w) < 1500:
+        scale = 1500 / max(h, w)
         new_w, new_h = int(w * scale), int(h * scale)
-        gray = cv2.resize(gray, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
+        img_cv = cv2.resize(img_cv, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
 
-    # CLAHE: ecualizacion adaptativa
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-    gray = clahe.apply(gray)
+    # Convertir a escala de grises (operacion simple y rapida)
+    if len(img_cv.shape) == 3:
+        gray = cv2.cvtColor(img_cv, cv2.COLOR_BGR2GRAY)
+    else:
+        gray = img_cv
 
-    # Denoising
-    gray = cv2.fastNlMeansDenoising(gray, h=10)
-
-    # Deskew (corregir inclinacion)
-    try:
-        # Detectar angulo de inclinacion
-        edges = cv2.Canny(gray, 50, 150, apertureSize=3)
-        lines = cv2.HoughLines(edges, 1, np.pi / 180, 200)
-        if lines is not None and len(lines) > 0:
-            angles = []
-            for rho, theta in lines[:, 0, :]:
-                angle = theta - np.pi / 2
-                if abs(angle) < 0.5:  # Solo desviaciones pequenas
-                    angles.append(angle)
-            if angles:
-                median_angle = np.median(angles)
-                if abs(median_angle) > 0.01:  # Solo rotar si es significativo
-                    M = cv2.getRotationMatrix2D((gray.shape[1] / 2, gray.shape[0] / 2),
-                                                np.degrees(median_angle), 1)
-                    gray = cv2.warpAffine(gray, M, (gray.shape[1], gray.shape[0]),
-                                          borderMode=cv2.BORDER_CONSTANT,
-                                          borderValue=(255, 255, 255))
-    except Exception:
-        pass
-
-    # Binarizacion Otsu
+    # Binarizacion Otsu (operacion simple, no pesada)
     _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 
-    # Convertir de vuelta a PIL Image
     return Image.fromarray(binary)
 
 
